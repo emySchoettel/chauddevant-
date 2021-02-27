@@ -94,6 +94,7 @@ public class Helper : MonoBehaviour
     
     public void GoToLevelFin()
     {
+
         StartCoroutine(Fade(true));
         StartCoroutine(WaitForLevel(2, true));
     }
@@ -111,17 +112,18 @@ public class Helper : MonoBehaviour
     {
         Vector3 res = new Vector3();
         rand_position_int = UnityEngine.Random.Range(0,3);
-        if(ItemController.rand_previous_item == 0)
-        {
-            ItemController.rand_previous_item = rand_position_int; 
-        }
-        else
-        {
-            while(ItemController.rand_previous_item == rand_position_int)
-            {
-                rand_position_int = UnityEngine.Random.Range(0,3);
-            }
-        }
+        // if(ItemController.rand_previous_item == 0)
+        // {
+        //     ItemController.rand_previous_item = rand_position_int; 
+        // }
+        // else
+        // {
+        //     while(ItemController.rand_previous_item == rand_position_int)
+        //     {
+        //         rand_position_int = UnityEngine.Random.Range(0,3);
+        //         Debug.Log(rand_position_int);
+        //     }
+        // }
         GameObject[] tab_positions = GameObject.FindObjectOfType<ItemController>().getTabPositions();
         switch(rand_position_int)
         {
@@ -193,6 +195,8 @@ public class Helper : MonoBehaviour
     }
     public void click_retour()
     {
+        //Time.timeScale = 0f; 
+        Commande.commandeActuelle = 0;
         SceneManager.LoadScene(0);
     }
 
@@ -209,6 +213,14 @@ public class Helper : MonoBehaviour
         if(tutoriel != null)
         {
             tutoriel.SetActive(true);
+        }
+    }
+    
+    public static void updateScoreFinal()
+    {
+        if(pointActuel > meilleurScore)
+        {
+            meilleurScore = pointActuel; 
         }
     }
 }

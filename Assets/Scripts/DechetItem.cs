@@ -30,14 +30,20 @@ public class DechetItem : MonoBehaviour, Item
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.transform.CompareTag("Bound"))
+        if(!gm.GetItemController().getEndGame())
         {
-            move = false;
-        }
-        else if(other.transform.CompareTag("Player"))
-        {
-            gm.dechetToPlayer();
-            move = false; 
+            if(other.transform.CompareTag("Bound"))
+            {
+                move = false;
+            }
+            else if(other.transform.CompareTag("Player"))
+            {
+                if(gm.getPlayer().GetComponent<PlayerVies>().haslifes())
+                {
+                    gm.dechetToPlayer();
+                }
+                move = false; 
+            }
         }
     }
 }

@@ -13,21 +13,13 @@ public class Commande : MonoBehaviour
 
     private static  GameObject[] nourrituresTab, positionsCommande;
 
-    public static int commandesGenerales = 1;
-
     public static int commandeActuelle = 0; 
 
     private void Update() 
     {
-        // if(commandesGenerales == 3)
-        // {
-        //     //Time.timeScale = 0f;
-        //     Debug.Log("Commande générale 3");
-        // }
-        if(commandeActuelle == 2)
+        if(commandeActuelle == 3)
         {
-            // Debug.Log("Commande actuelle 3");
-            // renouvellerCommande(); 
+            itemController.setEndGame(true);
             Sc_Fin.setTitre("Vous avez gagné !");
             GameObject.Find("Helper").GetComponent<Helper>().GoToLevelFin();
         }
@@ -36,6 +28,7 @@ public class Commande : MonoBehaviour
     private void OnEnable() 
     {
         helper = GameObject.Find("Helper").GetComponent<Helper>();
+        itemController = GameObject.FindObjectOfType<ItemController>().GetComponent<ItemController>();
     }
     
     public static void preparerCommande()
@@ -44,10 +37,7 @@ public class Commande : MonoBehaviour
         itemController = GameObject.FindObjectOfType<ItemController>(); 
         nourrituresTab = itemController.getTabNourritures(); 
         positionsCommande = itemController.getTabPositionsCommande(); 
-        //Instantiate(new GameObject("Commande"), new Vector3(), Quaternion.identity);
-        //GameObject.Find("Commande").transform.SetParent(GameObject.Find("Canvas").transform, false);
 
-        //TODO randomize les instances 
         for(int i = 0; i < 3; i++)
         {
             //Preparer le numero aleatoire
@@ -61,29 +51,4 @@ public class Commande : MonoBehaviour
             positionsCommande[i].GetComponent<CommandeItem>().nourriture = type;  
         }
     }
-    // public static void renouvellerCommande()
-    // {
-    //     Debug.Log("renouveller commande");
-    //     if(commandesGenerales != 3)
-    //     {
-    //         commandesGenerales++; 
-    //         commandeActuelle = 0;
-    //         Inventaire.clearIntentaire();
-    //         effacerCommande(); 
-    //         preparerCommande();
-            
-    //     }
-    //     else
-    //     {
-
-    //     }
-    // }
-
-    // public static void effacerCommande()
-    // {
-    //     foreach(GameObject itemCommande in positionsCommande)
-    //     {
-    //         itemCommande.GetComponent<Image>().sprite = null; 
-    //     }
-    // }
 }

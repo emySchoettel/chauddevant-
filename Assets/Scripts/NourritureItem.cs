@@ -10,7 +10,13 @@ public class NourritureItem : MonoBehaviour, Item
     private bool move = true; 
     public Helper.directions directionActuelle; 
     public Sprite sprite;  
-    public Helper.nourriture type; 
+    public Helper.nourriture type;
+    public GameManager gm; 
+
+    private void Awake() 
+    {
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
     public void Move()
     {
         transform.Translate(Vector2.down * speed * Time.deltaTime);
@@ -26,22 +32,30 @@ public class NourritureItem : MonoBehaviour, Item
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.transform.CompareTag("Player"))
+        if(!gm.GetItemController().getEndGame())
         {
-            if(Commande.commandeActuelle < 3)
+            if(other.transform.CompareTag("Player"))
             {
-                if(Commande.commande[Commande.commandeActuelle].GetComponent<NourritureItem>().type == this.type)
+                if(Commande.commandeActuelle < 4)
                 {
-                    Inventaire.addItemInventaire(gameObject.GetComponent<NourritureItem>());
-                    Helper.addPoints(20, false);
-                    move = false;  
-                    Commande.commandeActuelle++; 
+                    if(Commande.commande[Commande.commandeActuelle].GetComponent<NourritureItem>().type == this.type)
+                    {
+                        Inventaire.addItemInventaire(gameObject.GetComponent<NourritureItem>());
+                        Helper.addPoints(20, false);
+                        move = false;  
+                        Commande.commandeActuelle++; 
+                    }
+                    else
+                    {
+                        gm.dechetToPlayer();
+                    }
                 }
             }
+            else if(other.transform.CompareTag("Bound"))
+            {
+                move = false; 
+            }
         }
-        else if(other.transform.CompareTag("Bound"))
-        {
-            move = false; 
-        }
+       
     }
 }

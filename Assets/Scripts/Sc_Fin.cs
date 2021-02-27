@@ -11,8 +11,10 @@ public class Sc_Fin : MonoBehaviour
     private void Awake() 
     {
         titre.text = titre_str; 
+        Helper.updateScoreFinal();
         scoring_actuel.text = Helper.pointActuel.ToString();
         scoring_best.text = Helper.meilleurScore.ToString();
+
     }
 
     public static void setTitre(string etatPartie)

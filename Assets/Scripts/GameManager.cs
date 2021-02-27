@@ -115,6 +115,7 @@ public class GameManager : MonoBehaviour
     public void endOfGame()
     {
         //stop everything 
+        Commande.commandeActuelle = 5;
         joueurActuel.setMove(false); 
         itemController.setEndGame(true);
 
@@ -140,6 +141,11 @@ public class GameManager : MonoBehaviour
     public GameObject getPlayer()
     {
         return joueurActuel.gameObject;
+    }
+
+    public ItemController GetItemController()
+    {
+        return itemController;
     }
 
     #endregion

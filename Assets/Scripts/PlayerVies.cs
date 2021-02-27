@@ -37,4 +37,12 @@ public class PlayerVies : MonoBehaviour
     {
         return vies; 
     }
+
+    public bool haslifes()
+    {
+        if(getVies() != 0)
+            return true; 
+        else 
+            return false; 
+    }
 }
