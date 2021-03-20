@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System; 
+using Lean.Touch; 
 public class GameManager : MonoBehaviour
 {
     //Prefab
@@ -14,6 +15,20 @@ public class GameManager : MonoBehaviour
 
     private bool endGame; 
 
+    private void OnEnable() 
+    {
+        Lean.Touch.LeanTouch.OnFingerUpdate += HandleFingerTap; 
+    }
+
+    private void OnDisable() 
+    {
+        Lean.Touch.LeanTouch.OnFingerUpdate -= HandleFingerTap;     
+    }
+
+    private void HandleFingerTap(Lean.Touch.LeanFinger finger)
+    {
+        Helper.createProjectile(joueurActuel.gameObject); 
+    }
    private void Awake() 
     { 
         if(Helper.isFade)
@@ -29,18 +44,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SpawnCommande());
         Commande.preparerCommande();
         Inventaire.createInventaire();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(joueurActuel != null && joueurActuel.getMove())
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                Helper.createProjectile(joueurActuel.gameObject); 
-            }
-        }
     }
 
     private IEnumerator SpawnJoueur() 

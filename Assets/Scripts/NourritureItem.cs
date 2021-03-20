@@ -13,6 +13,8 @@ public class NourritureItem : MonoBehaviour, Item
     public Helper.nourriture type;
     public GameManager gm; 
 
+    public bool clear = false; 
+
     private void Awake() 
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -32,30 +34,29 @@ public class NourritureItem : MonoBehaviour, Item
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(!gm.GetItemController().getEndGame())
+
+        if(other.transform.CompareTag("Player"))
         {
-            if(other.transform.CompareTag("Player"))
+            if(Commande.commandeActuelle < 4)
             {
-                if(Commande.commandeActuelle < 4)
+                if(Commande.commande[Commande.commandeActuelle].GetComponent<NourritureItem>().type == this.type)
                 {
-                    if(Commande.commande[Commande.commandeActuelle].GetComponent<NourritureItem>().type == this.type)
-                    {
-                        Inventaire.addItemInventaire(gameObject.GetComponent<NourritureItem>());
-                        Helper.addPoints(20, false);
-                        move = false;  
-                        Commande.commandeActuelle++; 
-                    }
-                    else
-                    {
-                        gm.dechetToPlayer();
-                    }
+                    Inventaire.addItemInventaire(gameObject.GetComponent<NourritureItem>());
+                    Helper.addPoints(20, false);
+                    move = false;  
+                    Commande.commandeActuelle++; 
+                }
+                else
+                {
+                    gm.dechetToPlayer();
                 }
             }
-            else if(other.transform.CompareTag("Bound"))
-            {
-                move = false; 
-            }
         }
-       
+        else if(other.transform.CompareTag("Bound"))
+        {
+            Destroy(gameObject);
+            clear = true; 
+            move = false; 
+        }
     }
 }

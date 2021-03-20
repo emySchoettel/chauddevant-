@@ -35,6 +35,7 @@ public class DechetItem : MonoBehaviour, Item
             if(other.transform.CompareTag("Bound"))
             {
                 move = false;
+                Destroy(gameObject);
             }
             else if(other.transform.CompareTag("Player"))
             {
@@ -44,6 +45,14 @@ public class DechetItem : MonoBehaviour, Item
                 }
                 move = false; 
             }
+        }
+        if(other.transform.CompareTag("Player"))
+        {
+            if(gm.getPlayer().GetComponent<PlayerVies>().haslifes())
+            {
+                gm.dechetToPlayer();
+            }
+            move = false; 
         }
     }
 }
