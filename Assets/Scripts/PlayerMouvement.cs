@@ -12,10 +12,17 @@ public class PlayerMouvement : MonoBehaviour
     public Projectile prefabProjectile; 
 
     private bool canmove = true; 
+    [SerializeField]
+    private bool invincibility = false; 
+    public GameObject model; 
+
+
+    private Animator anim; 
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>(); 
          //début du jeu
         GetPositions();
         if(positions.Length != 0)
@@ -60,7 +67,6 @@ public class PlayerMouvement : MonoBehaviour
                 }
             
             }
-
         }
         
         if(canmove)
@@ -95,6 +101,28 @@ public class PlayerMouvement : MonoBehaviour
                 }
             }
         }
+    }
+
+    void TriggerVulnerability()
+    {
+        if(invincibility)
+        {
+            StartCoroutine(Vulnerability());
+        }
+    }
+
+
+    public IEnumerator Vulnerability()
+    {
+        invincibility = true; 
+
+        anim.SetBool("blink", true);
+
+        yield return new WaitForSeconds(3.0f);
+
+        anim.SetBool("blink", false);
+
+        invincibility = false; 
     }
 
     private Vector3 StartPosition()
@@ -136,5 +164,14 @@ public class PlayerMouvement : MonoBehaviour
     {
         return canmove; 
     }
-    
+
+    public bool getInvincibility()
+    {
+        return invincibility;
+    }    
+
+    public void setInvincibility(bool choix)
+    {
+        invincibility = choix; 
+    }
 }

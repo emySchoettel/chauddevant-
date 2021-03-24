@@ -112,18 +112,7 @@ public class Helper : MonoBehaviour
     {
         Vector3 res = new Vector3();
         rand_position_int = UnityEngine.Random.Range(0,3);
-        // if(ItemController.rand_previous_item == 0)
-        // {
-        //     ItemController.rand_previous_item = rand_position_int; 
-        // }
-        // else
-        // {
-        //     while(ItemController.rand_previous_item == rand_position_int)
-        //     {
-        //         rand_position_int = UnityEngine.Random.Range(0,3);
-        //         Debug.Log(rand_position_int);
-        //     }
-        // }
+
         GameObject[] tab_positions = GameObject.FindObjectOfType<ItemController>().getTabPositions();
         switch(rand_position_int)
         {

@@ -40,8 +40,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6732919553610525812}
   - component: {fileID: 5897914774145604356}
-  - component: {fileID: 5207030096886451256}
+  - component: {fileID: 6156270718946231298}
   - component: {fileID: 3104381107695979938}
+  - component: {fileID: 5207030096886451256}
   - component: {fileID: 7764657645533003294}
   m_Layer: 0
   m_Name: Joueur
@@ -59,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 2419803887109735935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.12, y: -4.5, z: -1}
-  m_LocalScale: {x: 0.55709, y: 0.55709, z: 0.55709}
+  m_LocalScale: {x: 0.74586, y: 0.74586, z: 0.74586}
   m_Children:
   - {fileID: 5655388674250728771}
   m_Father: {fileID: 0}
@@ -115,25 +116,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5207030096886451256
-MonoBehaviour:
+--- !u!95 &6156270718946231298
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2419803887109735935}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fa77ab90cf162b40af124be69ee7b45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  directionActuelle: 1
-  positions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  prefabProjectile: {fileID: 6294384895507708280, guid: 2d20d1f2ec89eda4ab719cc3c22a4d3b,
-    type: 3}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6537df1c83f4f444e88f10d2d74c9b79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &3104381107695979938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -160,6 +161,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 1.1}
   m_EdgeRadius: 0
+--- !u!114 &5207030096886451256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2419803887109735935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa77ab90cf162b40af124be69ee7b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionActuelle: 1
+  positions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  prefabProjectile: {fileID: 6294384895507708280, guid: 2d20d1f2ec89eda4ab719cc3c22a4d3b,
+    type: 3}
+  invincibility: 0
+  takehit: 0
+  model: {fileID: 0}
 --- !u!114 &7764657645533003294
 MonoBehaviour:
   m_ObjectHideFlags: 0

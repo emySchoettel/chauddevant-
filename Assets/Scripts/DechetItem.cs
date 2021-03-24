@@ -46,13 +46,14 @@ public class DechetItem : MonoBehaviour, Item
                 move = false; 
             }
         }
-        if(other.transform.CompareTag("Player"))
+        if(other.transform.CompareTag("Player") && !gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility())
         {
             if(gm.getPlayer().GetComponent<PlayerVies>().haslifes())
             {
                 gm.dechetToPlayer();
             }
             move = false; 
+            gm.getPlayer().GetComponent<PlayerMouvement>().setInvincibility(true);
         }
     }
 }
