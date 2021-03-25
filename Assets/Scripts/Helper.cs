@@ -97,7 +97,7 @@ public class Helper : MonoBehaviour
     {
 
         StartCoroutine(Fade(true));
-        StartCoroutine(WaitForLevel(2, true));
+        StartCoroutine(WaitForLevel(3, true));
     }
     public static IEnumerator Wait(float seconds)
     {
@@ -217,5 +217,10 @@ public class Helper : MonoBehaviour
     public void click_retour_menu_principal()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void click_credits()
+    {
+        SceneManager.LoadScene(2);
     }
 }
