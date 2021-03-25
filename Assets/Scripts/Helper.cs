@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class Helper : MonoBehaviour
 {
@@ -179,7 +180,7 @@ public class Helper : MonoBehaviour
         GameObject txt = GameObject.Find("score_text");
         if(txt != null)
         {
-            txt.GetComponent<Text>().text = pointActuel.ToString();
+            txt.GetComponent<TextMeshProUGUI>().text = pointActuel.ToString();
         }
     }
     public void click_retour()

@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class Sc_Fin : MonoBehaviour
 {
 
-    [SerializeField] Text titre, scoring_actuel, scoring_best; 
+    [SerializeField] TextMeshProUGUI titre, scoring_actuel, scoring_best; 
     private static string titre_str = "";
     private void Awake() 
     {
