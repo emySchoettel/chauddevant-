@@ -213,4 +213,9 @@ public class Helper : MonoBehaviour
             meilleurScore = pointActuel; 
         }
     }
+
+    public void click_retour_menu_principal()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
