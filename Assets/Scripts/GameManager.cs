@@ -92,6 +92,7 @@ public class GameManager : MonoBehaviour
     {
         if(viesJoueur.getVies() > 0)
         {
+            StartCoroutine(joueurActuel.Vulnerability());
             viesJoueur.setVies(viesJoueur.getVies() -1);
         }
         if(viesJoueur.getVies() == 0)
@@ -124,6 +125,25 @@ public class GameManager : MonoBehaviour
         }
 
         GO_Helper.GoToLevelFin();
+    }
+
+    public void verifyInventaire(NourritureItem nourritureItem)
+    {
+        
+        if(Commande.commandeActuelle < 4)
+        {   
+            Debug.Log(Commande.commande[Commande.commandeActuelle].name);
+            if(Commande.commande[Commande.commandeActuelle].GetComponent<NourritureItem>().type == nourritureItem.type)
+            {
+                Inventaire.addItemInventaire(gameObject.GetComponent<NourritureItem>());
+                Helper.addPoints(20, false);
+                Commande.commandeActuelle++; 
+            }
+            else
+            {
+                dechetToPlayer();
+            }
+        }
     }
     
     #region get et set

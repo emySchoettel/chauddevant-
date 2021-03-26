@@ -34,23 +34,9 @@ public class NourritureItem : MonoBehaviour, Item
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-
         if(other.transform.CompareTag("Player"))
         {
-            if(Commande.commandeActuelle < 4)
-            {
-                if(Commande.commande[Commande.commandeActuelle].GetComponent<NourritureItem>().type == this.type)
-                {
-                    Inventaire.addItemInventaire(gameObject.GetComponent<NourritureItem>());
-                    Helper.addPoints(20, false);
-                    move = false;  
-                    Commande.commandeActuelle++; 
-                }
-                else
-                {
-                    gm.dechetToPlayer();
-                }
-            }
+            gm.verifyInventaire(this);
         }
         else if(other.transform.CompareTag("Bound"))
         {

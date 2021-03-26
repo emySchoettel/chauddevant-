@@ -1621,7 +1621,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821604883}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2473,7 +2473,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129264813}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2734,7 +2734,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1260037782}
-  - component: {fileID: 1260037781}
   - component: {fileID: 1260037783}
   m_Layer: 0
   m_Name: SwipeManager
@@ -2743,21 +2742,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1260037781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260037780}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaac4b9f2b6bd9048bf86a19a017f267, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minSwipeLength: 0.5
-  triggerSwipeAtMinLength: 0
-  useEightDirections: 0
 --- !u!4 &1260037782
 Transform:
   m_ObjectHideFlags: 0
@@ -2784,7 +2768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383ed1706cbf1124888d70f05eee8692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugWithArrowKeys: 0
+  debugWithArrowKeys: 1
 --- !u!1 &1312311597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,8 +3131,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0068359375, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 13.5, y: 0}
-  m_SizeDelta: {x: 10.248047, y: 9.744263}
+  m_AnchoredPosition: {x: 6.861786, y: 0}
+  m_SizeDelta: {x: 23.04602, y: 9.744263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1835929330
 GameObject:
@@ -3233,10 +3217,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 27.7
   m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -3539,7 +3523,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016114526}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

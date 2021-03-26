@@ -33,7 +33,6 @@ public class Commande : MonoBehaviour
     
     public static void preparerCommande()
     {
-        Debug.Log("préparer commande");
         itemController = GameObject.FindObjectOfType<ItemController>(); 
         nourrituresTab = itemController.getTabNourritures(); 
         positionsCommande = itemController.getTabPositionsCommande(); 
@@ -42,6 +41,7 @@ public class Commande : MonoBehaviour
         {
             //Preparer le numero aleatoire
             int indexItemCommande = Random.Range(0,nourrituresTab.Length);
+            
             //Ajouter a la liste
             commande.Add(nourrituresTab[indexItemCommande]);
             positionsCommande[i].GetComponent<Image>().sprite = commande[i].GetComponent<SpriteRenderer>().sprite;

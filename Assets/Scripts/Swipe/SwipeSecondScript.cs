@@ -53,9 +53,15 @@ public class SwipeSecondScript : MonoBehaviour
 
                 Vector2 swipe = new Vector2(endPos.x - startPos.x, endPos.y - startPos.y);
 
-                if (swipe.magnitude < MIN_SWIPE_DISTANCE) // Too short swipe
+                // Too short swipe;
+                if (swipe.magnitude < MIN_SWIPE_DISTANCE)
+                {
+                    Projectile.isFired = true;
+                    Helper.createProjectile(GameObject.FindGameObjectWithTag("Player"));
+                    Projectile.isFired = false;
                     return;
-
+                }
+                    
                 if (Mathf.Abs (swipe.x) > Mathf.Abs (swipe.y)) { // Horizontal swipe
                     if (swipe.x > 0) {
                         swipedRight = true;

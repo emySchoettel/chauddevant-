@@ -23,7 +23,8 @@ public class PlayerMouvement : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>(); 
-         //début du jeu
+
+        //début du jeu
         GetPositions();
         if(positions.Length != 0)
         {
@@ -38,8 +39,6 @@ public class PlayerMouvement : MonoBehaviour
         if(canmove)
         {
             //Swipe left
-            // if(SwipeManager.IsSwipingLeft())
-            // {
             if(SwipeSecondScript.swipedLeft && !Projectile.isFired)
             {
                 if(directionActuelle == Helper.directions.droite)
@@ -55,8 +54,6 @@ public class PlayerMouvement : MonoBehaviour
             }
 
             //Swipe right
-            // else if(SwipeManager.IsSwipingRight())
-            // {
             if(SwipeSecondScript.swipedRight && !Projectile.isFired)
             {
                 if(directionActuelle == Helper.directions.gauche)
@@ -71,24 +68,9 @@ public class PlayerMouvement : MonoBehaviour
                 }
             
             }
-        }
-        
-        var count = Input.touchCount; 
+        }        
 
-        if(count > 0)
-        {
-            for(int i = 0; i < count; i++)
-            {
-                var touch = Input.GetTouch(i);
-                if(touch.phase == TouchPhase.Ended)
-                {
-                    Helper.createProjectile(gameObject);
-                }
-
-            }
-        }
-
-         if(canmove)
+        if(canmove)
         {
             if(directionActuelle == Helper.directions.gauche)
             {

@@ -37,7 +37,10 @@ public class DechetItem : MonoBehaviour, Item
         }
         else if(other.transform.CompareTag("Player"))
         {
-            if(gm.getPlayer().GetComponent<PlayerVies>().haslifes())
+            bool invincibility = gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility();
+            Debug.Log(invincibility);
+
+            if(gm.getPlayer().GetComponent<PlayerVies>().haslifes() && !invincibility)
             {
                 gm.dechetToPlayer();
             }
