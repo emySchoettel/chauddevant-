@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
 
     public float speed = 2f; 
     private bool move = true; 
+
+    public static bool isFired = false; 
     
     public void Move()
     {

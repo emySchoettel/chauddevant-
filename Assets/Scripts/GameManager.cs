@@ -15,20 +15,6 @@ public class GameManager : MonoBehaviour
 
     private bool endGame; 
 
-    private void OnEnable() 
-    {
-        Lean.Touch.LeanTouch.OnFingerUpdate += HandleFingerTap; 
-    }
-
-    private void OnDisable() 
-    {
-        Lean.Touch.LeanTouch.OnFingerUpdate -= HandleFingerTap;     
-    }
-
-    private void HandleFingerTap(Lean.Touch.LeanFinger finger)
-    {
-        Helper.createProjectile(joueurActuel.gameObject); 
-    }
    private void Awake() 
     { 
         if(Helper.isFade)
@@ -119,7 +105,7 @@ public class GameManager : MonoBehaviour
     {
         //stop everything 
         Commande.commandeActuelle = 5;
-        joueurActuel.setMove(false); 
+        //joueurActuel.setMove(false); 
         itemController.setEndGame(true);
 
         Sc_Fin.setTitre("Vous avez perdu");

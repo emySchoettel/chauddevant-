@@ -30,30 +30,27 @@ public class DechetItem : MonoBehaviour, Item
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(!gm.GetItemController().getEndGame())
+         if(other.transform.CompareTag("Bound"))
         {
-            if(other.transform.CompareTag("Bound"))
-            {
-                move = false;
-                Destroy(gameObject);
-            }
-            else if(other.transform.CompareTag("Player"))
-            {
-                if(gm.getPlayer().GetComponent<PlayerVies>().haslifes())
-                {
-                    gm.dechetToPlayer();
-                }
-                move = false; 
-            }
+            move = false;
+            Destroy(gameObject);
         }
-        if(other.transform.CompareTag("Player") && !gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility())
+        else if(other.transform.CompareTag("Player"))
         {
             if(gm.getPlayer().GetComponent<PlayerVies>().haslifes())
             {
                 gm.dechetToPlayer();
             }
             move = false; 
-            gm.getPlayer().GetComponent<PlayerMouvement>().setInvincibility(true);
         }
+        // if(other.transform.CompareTag("Player") && !gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility())
+        // {
+        //     if(gm.getPlayer().GetComponent<PlayerVies>().haslifes())
+        //     {
+        //         gm.dechetToPlayer();
+        //     }
+        //     move = false; 
+        //     gm.getPlayer().GetComponent<PlayerMouvement>().setInvincibility(true);
+        // }
     }
 }
