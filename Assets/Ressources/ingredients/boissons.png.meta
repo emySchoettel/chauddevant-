@@ -1,0 +1,2348 @@
+fileFormatVersion: 2
+guid: fbb43c0a18cf720439f4f4fe23790817
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6160557620494829216
+    second: boissons_0
+  - first:
+      213: -3408641144978912515
+    second: boissons_1
+  - first:
+      213: 7191281507003862429
+    second: boissons_2
+  - first:
+      213: -4188337316017985838
+    second: boissons_3
+  - first:
+      213: -3833946314291932233
+    second: boissons_4
+  - first:
+      213: -6256252688593189793
+    second: boissons_5
+  - first:
+      213: -2993630237793353972
+    second: boissons_6
+  - first:
+      213: 4457577730024556648
+    second: boissons_7
+  - first:
+      213: 5799316042772745887
+    second: boissons_8
+  - first:
+      213: 995029462971191993
+    second: boissons_9
+  - first:
+      213: -2742532747507599183
+    second: boissons_10
+  - first:
+      213: -5431581093155691407
+    second: boissons_11
+  - first:
+      213: -5528765901437239616
+    second: boissons_12
+  - first:
+      213: -578364886864742581
+    second: boissons_13
+  - first:
+      213: 5278775087992727824
+    second: boissons_14
+  - first:
+      213: 4090968920088944953
+    second: boissons_15
+  - first:
+      213: 8733411570913071130
+    second: boissons_16
+  - first:
+      213: -2837990081665397777
+    second: boissons_17
+  - first:
+      213: -9008377461593950951
+    second: boissons_18
+  - first:
+      213: 7136622987932022285
+    second: boissons_19
+  - first:
+      213: -6500911486341075808
+    second: boissons_20
+  - first:
+      213: 6708664813577063265
+    second: boissons_21
+  - first:
+      213: -2770718996067910846
+    second: boissons_22
+  - first:
+      213: 7315696772247322160
+    second: boissons_23
+  - first:
+      213: -223310844806273916
+    second: boissons_24
+  - first:
+      213: -8778500577294693221
+    second: boissons_25
+  - first:
+      213: -8845863189685998809
+    second: boissons_26
+  - first:
+      213: 632126311449889441
+    second: boissons_27
+  - first:
+      213: -5108344371619696668
+    second: boissons_28
+  - first:
+      213: 1208615362910319280
+    second: boissons_29
+  - first:
+      213: 6472425068441927441
+    second: boissons_30
+  - first:
+      213: -5528774224845851888
+    second: boissons_31
+  - first:
+      213: 844507765000896084
+    second: boissons_32
+  - first:
+      213: -6619896828121728156
+    second: boissons_33
+  - first:
+      213: -8015308448877945828
+    second: boissons_34
+  - first:
+      213: -4838779812167499094
+    second: boissons_35
+  - first:
+      213: 4235679708887040919
+    second: boissons_36
+  - first:
+      213: -8132895524312767377
+    second: boissons_37
+  - first:
+      213: 64519796780442905
+    second: boissons_38
+  - first:
+      213: -6678441336142400478
+    second: boissons_39
+  - first:
+      213: -6830274446070347481
+    second: boissons_40
+  - first:
+      213: -7609927541059807479
+    second: boissons_41
+  - first:
+      213: -5516941182044361361
+    second: boissons_42
+  - first:
+      213: 1871917971371122332
+    second: boissons_43
+  - first:
+      213: 8264674211305332287
+    second: boissons_44
+  - first:
+      213: 7916773805022417705
+    second: boissons_45
+  - first:
+      213: -6992377883877842197
+    second: boissons_46
+  - first:
+      213: 2158419538572946943
+    second: boissons_47
+  - first:
+      213: 5350328635210046654
+    second: boissons_48
+  - first:
+      213: 2320206582130743489
+    second: boissons_49
+  - first:
+      213: 499454411428988967
+    second: boissons_50
+  - first:
+      213: 3046823857349442118
+    second: boissons_51
+  - first:
+      213: -1172847803410496893
+    second: boissons_52
+  - first:
+      213: 6975499511503402070
+    second: boissons_53
+  - first:
+      213: -3355624374917672720
+    second: boissons_54
+  - first:
+      213: 7344032095097825631
+    second: boissons_55
+  - first:
+      213: 8747533992937207554
+    second: boissons_56
+  - first:
+      213: -1448177598845175815
+    second: boissons_57
+  - first:
+      213: -4210395573739723598
+    second: boissons_58
+  - first:
+      213: -6099346398328359876
+    second: boissons_59
+  - first:
+      213: 4923983148806634538
+    second: boissons_60
+  - first:
+      213: 670718378756080165
+    second: boissons_61
+  - first:
+      213: -7866895216043915806
+    second: boissons_62
+  - first:
+      213: -7148155112732466869
+    second: boissons_63
+  - first:
+      213: -398444755668951640
+    second: boissons_64
+  - first:
+      213: 8638206326579949951
+    second: boissons_65
+  - first:
+      213: -5113007472117891449
+    second: boissons_66
+  - first:
+      213: 1136900060077731744
+    second: boissons_67
+  - first:
+      213: -6866047991841495632
+    second: boissons_68
+  - first:
+      213: 1270697252862517240
+    second: boissons_69
+  - first:
+      213: -762257559815540853
+    second: boissons_70
+  - first:
+      213: 2474098829165981031
+    second: boissons_71
+  - first:
+      213: 4448585315691117727
+    second: boissons_72
+  - first:
+      213: -3742249761662712175
+    second: boissons_73
+  - first:
+      213: 9173737619080841532
+    second: boissons_74
+  - first:
+      213: -9080222103604804846
+    second: boissons_75
+  - first:
+      213: 1986029673145345776
+    second: boissons_76
+  - first:
+      213: 3751327353510883001
+    second: boissons_77
+  - first:
+      213: -4218870776999322809
+    second: boissons_78
+  - first:
+      213: 4955957932798130152
+    second: boissons_79
+  - first:
+      213: 1058047283923686860
+    second: boissons_80
+  - first:
+      213: 741135706131504205
+    second: boissons_81
+  - first:
+      213: -8363459138911481236
+    second: boissons_82
+  - first:
+      213: 4860011398743348387
+    second: boissons_83
+  - first:
+      213: -3371632286038335396
+    second: boissons_84
+  - first:
+      213: 5769508757180945116
+    second: boissons_85
+  - first:
+      213: 696477367723243413
+    second: boissons_86
+  - first:
+      213: -1994993959136379173
+    second: boissons_87
+  - first:
+      213: -1874837856725349733
+    second: boissons_88
+  - first:
+      213: -3436502647244408311
+    second: boissons_89
+  - first:
+      213: 1516756977038229950
+    second: boissons_90
+  - first:
+      213: 6566171991094888068
+    second: boissons_91
+  - first:
+      213: 507676718470183877
+    second: boissons_92
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boissons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0697414fb7d418aa0800000000000000
+      internalID: -6160557620494829216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 104
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa40ca30f212b0d0800000000000000
+      internalID: -3408641144978912515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 104
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d0dc8fd609cc360800000000000000
+      internalID: 7191281507003862429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 104
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d62c3fd66900e5c0800000000000000
+      internalID: -4188337316017985838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 104
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b316b8e3261bcac0800000000000000
+      internalID: -3833946314291932233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_5
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 104
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f540257a3535d29a0800000000000000
+      internalID: -6256252688593189793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 104
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f757fd82d7476d0800000000000000
+      internalID: -2993630237793353972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_7
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 104
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8684ec4045f7cdd30800000000000000
+      internalID: 4457577730024556648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 104
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e81bdf63f4b7050800000000000000
+      internalID: 5799316042772745887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 104
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b21271560e0fcd00800000000000000
+      internalID: 995029462971191993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_10
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 104
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8fee72ff090f9d0800000000000000
+      internalID: -2742532747507599183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_11
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 104
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1742ab506c52f94b0800000000000000
+      internalID: -5431581093155691407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_12
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 104
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce7a8e84b0e543b0800000000000000
+      internalID: -5528765901437239616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_13
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 104
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b473edf133c39f7f0800000000000000
+      internalID: -578364886864742581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_14
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 104
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019ecf079f9f14940800000000000000
+      internalID: 5278775087992727824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_15
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 104
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931a015de8a06c830800000000000000
+      internalID: 4090968920088944953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_16
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 110
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a105f895d8f433970800000000000000
+      internalID: 8733411570913071130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_17
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 104
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb804a9e0f6d98d0800000000000000
+      internalID: -2837990081665397777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915be075d60dbf280800000000000000
+      internalID: -9008377461593950951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_19
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 78
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06339bcbc06a0360800000000000000
+      internalID: 7136622987932022285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 78
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac226c427f18c5a0800000000000000
+      internalID: -6500911486341075808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_21
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 78
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b4c6a9a17f91d50800000000000000
+      internalID: 6708664813577063265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 78
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bf1f2c0cd6c89d0800000000000000
+      internalID: -2770718996067910846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_23
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 78
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ef5424473968560800000000000000
+      internalID: 7315696772247322160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 78
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48464d448f3a6ecf0800000000000000
+      internalID: -223310844806273916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_25
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 78
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cc9c54c308c2680800000000000000
+      internalID: -8778500577294693221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_26
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 78
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bef0fdb4e2d3580800000000000000
+      internalID: -8845863189685998809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_27
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 78
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa0627f783c5c800800000000000000
+      internalID: 632126311449889441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_28
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 78
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efed33fbd38b19b0800000000000000
+      internalID: -5108344371619696668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_29
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 78
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b27950e44dd5c010800000000000000
+      internalID: 1208615362910319280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_30
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 78
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f70dfae4ca2d950800000000000000
+      internalID: 6472425068441927441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_31
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 77
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0133abc9229d543b0800000000000000
+      internalID: -5528774224845851888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_32
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 78
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45effee765b48bb00800000000000000
+      internalID: 844507765000896084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_33
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 79
+        width: 5
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bb11698e66124a0800000000000000
+      internalID: -6619896828121728156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 79
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c5173ce67e3c090800000000000000
+      internalID: -8015308448877945828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2cc65d56339dcb0800000000000000
+      internalID: -4838779812167499094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 52
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793ca8ee04828ca30800000000000000
+      internalID: 4235679708887040919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_37
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 52
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6429fd4c96222f80800000000000000
+      internalID: -8132895524312767377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_38
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 52
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9152410d96835e000800000000000000
+      internalID: 64519796780442905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_39
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 52
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22472f91df86153a0800000000000000
+      internalID: -6678441336142400478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_40
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 52
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7298c83649df531a0800000000000000
+      internalID: -6830274446070347481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 52
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9071ba4783b146690800000000000000
+      internalID: -7609927541059807479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_42
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 52
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6da5859933ef63b0800000000000000
+      internalID: -5516941182044361361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_43
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 52
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ede342a736af910800000000000000
+      internalID: 1871917971371122332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_44
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 52
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e9f25386502b270800000000000000
+      internalID: 8264674211305332287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_45
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 52
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9239a7fa4d70edd60800000000000000
+      internalID: 7916773805022417705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_46
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 52
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2e920ac5516fe90800000000000000
+      internalID: -6992377883877842197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_47
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 52
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd27e0722f34fd10800000000000000
+      internalID: 2158419538572946943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_48
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 52
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc9b45eb8f204a40800000000000000
+      internalID: 5350328635210046654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_49
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 52
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c81d6de797033020800000000000000
+      internalID: 2320206582130743489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_50
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 60
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7280ab6142b6ee600800000000000000
+      internalID: 499454411428988967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_51
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 54
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64abf7ec72e784a20800000000000000
+      internalID: 3046823857349442118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_52
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 52
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382ce16032539bfe0800000000000000
+      internalID: -1172847803410496893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 26
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654321219d3fdc060800000000000000
+      internalID: 6975499511503402070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_54
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 26
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0d36de86d6e61d0800000000000000
+      internalID: -3355624374917672720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_55
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 26
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59af57b74e3be560800000000000000
+      internalID: 7344032095097825631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_56
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 26
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2073da5f1db756970800000000000000
+      internalID: 8747533992937207554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_57
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 26
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7b729852a07ebe0800000000000000
+      internalID: -1448177598845175815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_58
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 26
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4ed57888ba195c0800000000000000
+      internalID: -4210395573739723598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_59
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 26
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34749534c4ca5ba0800000000000000
+      internalID: -6099346398328359876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_60
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 26
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cf0a0e590855440800000000000000
+      internalID: 4923983148806634538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_61
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 26
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5220516dfcede4900800000000000000
+      internalID: 670718378756080165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_62
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 26
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e58b7a4b7c23d290800000000000000
+      internalID: -7866895216043915806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_63
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 26
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41603a2cc6accc90800000000000000
+      internalID: -7148155112732466869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_64
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 26
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad1cb31b90787af0800000000000000
+      internalID: -398444755668951640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_65
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 26
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71745803e211e770800000000000000
+      internalID: 8638206326579949951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_66
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 26
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ebe724bc2fa09b0800000000000000
+      internalID: -5113007472117891449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_67
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 26
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afad02c49417cf00800000000000000
+      internalID: 1136900060077731744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_68
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 26
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5e083bab5e6b0a0800000000000000
+      internalID: -6866047991841495632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_69
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 26
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff5fe54b6c62a110800000000000000
+      internalID: 1270697252862517240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_70
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 38
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fa6d7b9caeb65f0800000000000000
+      internalID: -762257559815540853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_71
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 33
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76de5abd6c3c55220800000000000000
+      internalID: 2474098829165981031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_72
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 26
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cb9c666cc8cbd30800000000000000
+      internalID: 4448585315691117727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_73
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 26
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196cd474babd01cc0800000000000000
+      internalID: -3742249761662712175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3983ff82c9af4f70800000000000000
+      internalID: 9173737619080841532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_75
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2134cf81b129cf180800000000000000
+      internalID: -9080222103604804846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_76
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6a63d177bcf8b10800000000000000
+      internalID: 1986029673145345776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_77
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bee8364a546f0430800000000000000
+      internalID: 3751327353510883001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_78
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bddaf716f8375c0800000000000000
+      internalID: -4218870776999322809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_79
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7363a6b7917c440800000000000000
+      internalID: 4955957932798130152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_80
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc596d12660feae00800000000000000
+      internalID: 1058047283923686860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_81
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c935e7ffa094a00800000000000000
+      internalID: 741135706131504205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_82
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62dfa389360feb80800000000000000
+      internalID: -8363459138911481236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_83
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 0
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a452722e9a327340800000000000000
+      internalID: 4860011398743348387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_84
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 0
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50627dac4e8531d0800000000000000
+      internalID: -3371632286038335396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_85
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2964085a9611050800000000000000
+      internalID: 5769508757180945116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_86
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 0
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5973e31d9726aa900800000000000000
+      internalID: 696477367723243413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_87
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde30a8609b5054e0800000000000000
+      internalID: -1994993959136379173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_88
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a4e6217ec3bf5e0800000000000000
+      internalID: -1874837856725349733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_89
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 0
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90abe49bc071f40d0800000000000000
+      internalID: -3436502647244408311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_90
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 0
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb185fa3f6a9c0510800000000000000
+      internalID: 1516756977038229950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_91
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 0
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486845703aabf1b50800000000000000
+      internalID: 6566171991094888068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boissons_92
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 2
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbb6212941ab0700800000000000000
+      internalID: 507676718470183877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

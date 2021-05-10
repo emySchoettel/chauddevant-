@@ -1,0 +1,836 @@
+fileFormatVersion: 2
+guid: 5ce866edd78973b44910b0e3e3a4225b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8513817250674913688
+    second: usentiles_cuisine_part1_0
+  - first:
+      213: -5369377198590881329
+    second: usentiles_cuisine_part1_1
+  - first:
+      213: -8044969730004042444
+    second: usentiles_cuisine_part1_2
+  - first:
+      213: 294384683454054762
+    second: usentiles_cuisine_part1_3
+  - first:
+      213: 5778920977748286217
+    second: usentiles_cuisine_part1_4
+  - first:
+      213: -3502694093422944014
+    second: usentiles_cuisine_part1_5
+  - first:
+      213: -8835772311302419067
+    second: usentiles_cuisine_part1_6
+  - first:
+      213: -7766947801324909654
+    second: usentiles_cuisine_part1_7
+  - first:
+      213: 3148117006785489530
+    second: usentiles_cuisine_part1_8
+  - first:
+      213: -4547444641076769330
+    second: usentiles_cuisine_part1_9
+  - first:
+      213: -8156079016552057982
+    second: usentiles_cuisine_part1_10
+  - first:
+      213: -1788721626491414373
+    second: usentiles_cuisine_part1_11
+  - first:
+      213: -1752322416595132827
+    second: usentiles_cuisine_part1_12
+  - first:
+      213: -2255987701406380308
+    second: usentiles_cuisine_part1_13
+  - first:
+      213: 8362882374684062891
+    second: usentiles_cuisine_part1_14
+  - first:
+      213: -3763908792808678371
+    second: usentiles_cuisine_part1_15
+  - first:
+      213: 2317868750239430758
+    second: usentiles_cuisine_part1_16
+  - first:
+      213: 2823286046532615000
+    second: usentiles_cuisine_part1_17
+  - first:
+      213: 5852605813375781800
+    second: usentiles_cuisine_part1_18
+  - first:
+      213: -3809626722878827360
+    second: usentiles_cuisine_part1_19
+  - first:
+      213: -1076077683490405364
+    second: usentiles_cuisine_part1_20
+  - first:
+      213: -8672977869672361164
+    second: usentiles_cuisine_part1_21
+  - first:
+      213: 3789472356108718677
+    second: usentiles_cuisine_part1_22
+  - first:
+      213: -2194422326572452770
+    second: usentiles_cuisine_part1_23
+  - first:
+      213: 8720613816237848939
+    second: usentiles_cuisine_part1_24
+  - first:
+      213: 3126376123095206758
+    second: usentiles_cuisine_part1_25
+  - first:
+      213: 2644858030950223498
+    second: usentiles_cuisine_part1_26
+  - first:
+      213: 6219051448253621922
+    second: usentiles_cuisine_part1_27
+  - first:
+      213: 1071121151896340145
+    second: usentiles_cuisine_part1_28
+  - first:
+      213: 7534415335538862365
+    second: usentiles_cuisine_part1_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ecde29158d8d980800000000000000
+      internalID: -8513817250674913688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 28
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc198e4d2e32c75b0800000000000000
+      internalID: -5369377198590881329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 30
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43db65697a68a5090800000000000000
+      internalID: -8044969730004042444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 28
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6148945f4dd51400800000000000000
+      internalID: 294384683454054762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_4
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 28
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b5dbfd20ad23050800000000000000
+      internalID: 5778920977748286217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_5
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 27
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0aaa4b74ee36fc0800000000000000
+      internalID: -3502694093422944014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 28
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d469495e7016580800000000000000
+      internalID: -8835772311302419067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_7
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 28
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab07013022463490800000000000000
+      internalID: -7766947801324909654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_8
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 27
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7aa0dcfcbb50bb20800000000000000
+      internalID: 3148117006785489530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_9
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 36
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd8ddc313b34e0c0800000000000000
+      internalID: -4547444641076769330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_10
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 29
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283b562e859cfce80800000000000000
+      internalID: -8156079016552057982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_11
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 28
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b989be2682f2d27e0800000000000000
+      internalID: -1788721626491414373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_12
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 28
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e94eadb008ea7e0800000000000000
+      internalID: -1752322416595132827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_13
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 28
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceec508632f11b0e0800000000000000
+      internalID: -2255987701406380308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_14
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 28
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba43b69163dee0470800000000000000
+      internalID: 8362882374684062891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 12
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c5bad15e8e3cbc0800000000000000
+      internalID: -3763908792808678371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_16
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 11
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668fff50959ba2020800000000000000
+      internalID: 2317868750239430758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_17
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 4
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bb4ee63b35e2720800000000000000
+      internalID: 2823286046532615000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab46a49af1a83150800000000000000
+      internalID: 5852605813375781800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_19
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4d8f70eac712bc0800000000000000
+      internalID: -3809626722878827360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_20
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 4
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0444d45c010111f0800000000000000
+      internalID: -1076077683490405364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_21
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 5
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433da55349463a780800000000000000
+      internalID: -8672977869672361164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_22
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552d508c709e69430800000000000000
+      internalID: 3789472356108718677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_23
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 5
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5476714588db81e0800000000000000
+      internalID: -2194422326572452770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_24
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 3
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b697834ef08d50970800000000000000
+      internalID: 8720613816237848939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_25
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 4
+        width: 4
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b4a5b058e136b20800000000000000
+      internalID: 3126376123095206758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_26
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 4
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e8028bd5c64b420800000000000000
+      internalID: 2644858030950223498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_27
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 4
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6290d97528e4650800000000000000
+      internalID: 6219051448253621922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6403a33036dde00800000000000000
+      internalID: 1071121151896340145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: usentiles_cuisine_part1_29
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 3
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19ac0124de9f8860800000000000000
+      internalID: 7534415335538862365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

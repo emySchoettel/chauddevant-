@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Helper GO_Helper; 
     [SerializeField] private GameObject GameOver, GameOverPanel, GameOverScoring, Scoring;
 
+   
+
     private bool endGame; 
 
    private void Awake() 
