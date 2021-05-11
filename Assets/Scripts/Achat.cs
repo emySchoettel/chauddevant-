@@ -11,6 +11,16 @@ public class Achat : MonoBehaviour
     [System.Serializable]
     public class Competence
     {
+
+        public enum type
+        {
+            casserole, 
+            louche,
+            rappe,
+            biere
+        }
+
+        public type typeBonus;
         public string nom; 
         [TextArea]
         public string description; 
@@ -28,9 +38,6 @@ public class Achat : MonoBehaviour
         {
             argent_txt.GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetInt("argent").ToString(); 
         }
-
-        Debug.Log(Helper.getArgent());
-        Debug.Log(PlayerPrefs.HasKey("casserole"));
 
         if(Helper.getArgent() > competences[0].prix && !PlayerPrefs.HasKey("casserole"))
         {
@@ -121,6 +128,14 @@ public class Achat : MonoBehaviour
             current.transform.GetChild(3).GetComponent<Image>().sprite = competences[i].image; 
             //prix
             current.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = competences[i].prix.ToString();
+
+            //Verifier le bouton pour la casserole
+            
+        }
+
+        if(!PlayerPrefs.HasKey("casserole") && Helper.getArgent() > competences[0].prix)
+        {
+            competences[0].self.transform.GetChild(5).GetComponent<Button>().interactable = true; 
         }
 
         GameObject.Find("Prece_btn").GetComponent<Button>().interactable = false; 

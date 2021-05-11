@@ -12,15 +12,20 @@ public class Sc_Fin : MonoBehaviour
     {
         titre.text = titre_str; 
         Helper.updateScoreFinal();
+        Helper.updateArgent(Helper.pointActuel);
         scoring_actuel.text = Helper.pointActuel.ToString();
-        scoring_best.text = Helper.meilleurScore.ToString();
-        
+        if(PlayerPrefs.HasKey("meilleurScore"))
+        {
+            scoring_best.text = PlayerPrefs.GetInt("meilleurScore").ToString();
+        }
+        else
+        {
+            scoring_best.text = "0";
+        }
+
+        argent.text = Helper.getArgent().ToString();
     }
 
-    private void addArgent()
-    {
-            
-    }
     public static void setTitre(string etatPartie)
     {
         titre_str = etatPartie;

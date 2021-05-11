@@ -54,7 +54,7 @@ public class SwipeSecondScript : MonoBehaviour
                 Vector2 swipe = new Vector2(endPos.x - startPos.x, endPos.y - startPos.y);
 
                 // Too short swipe;
-                if (swipe.magnitude < MIN_SWIPE_DISTANCE)
+                if (swipe.magnitude < MIN_SWIPE_DISTANCE || Input.GetKeyDown(KeyCode.Space))
                 {
                     Projectile.isFired = true;
                     Helper.createProjectile(GameObject.FindGameObjectWithTag("Player"));

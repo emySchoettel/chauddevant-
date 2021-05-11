@@ -13,19 +13,22 @@ public class Helper : MonoBehaviour
 
     public GameObject[] tab_nourriture;
 
-    public enum directions{
+    public enum directions
+    {
         gauche,
         milieu, 
         droite
     }
 
-    public enum nourriture{
+    public enum nourriture
+    {
         bacon,
         pain,
         oeuf
     }
 
-    public enum item{
+    public enum item
+    {
         nourriture, 
         dechet, 
         rien
@@ -34,11 +37,14 @@ public class Helper : MonoBehaviour
     public static int pointActuel = 0, meilleurScore = 0;
     private static int itemNourriture, itemDechet, commande;
 
-    private static int argent; 
+    private static int argent = 0; 
 
     public static int getArgent()
     {
-
+        if(PlayerPrefs.HasKey("argent"))
+        {
+            argent = PlayerPrefs.GetInt("argent");
+        }
         return argent;
     }
     public static void setArgent(int newcoins)
@@ -56,6 +62,22 @@ public class Helper : MonoBehaviour
             PlayerPrefs.SetInt("argent", argent);
             PlayerPrefs.Save(); 
         }
+    }
+
+    public static void updateArgent(int score)
+    {
+        int argentactuel = Mathf.RoundToInt(score / 10);
+        if(PlayerPrefs.GetInt("argent") != 0)
+        {
+            argent = getArgent() + argentactuel; 
+        }
+        else
+        {
+            argent = argentactuel;
+        }
+        
+        PlayerPrefs.SetInt("argent", argent); 
+        PlayerPrefs.Save(); 
     }
 
     #region Debut du jeu 
@@ -238,18 +260,7 @@ public class Helper : MonoBehaviour
             meilleurScore = pointActuel; 
             PlayerPrefs.SetInt("meilleurScore", meilleurScore); 
         }     
-        int argentactuel = Mathf.RoundToInt(pointActuel / 10);
-        if(PlayerPrefs.GetInt("argent") != 0)
-        {
-            argent = PlayerPrefs.GetInt("argent") + argentactuel; 
-        }
-        else
-        {
-            argent = argentactuel;
-        }
-        
-        PlayerPrefs.SetInt("argent", argent); 
-        
+     
         PlayerPrefs.Save(); 
     }
 
@@ -262,7 +273,7 @@ public class Helper : MonoBehaviour
         //Verifier dans les playerPrefs que le produit n est pas deja achete
         if(!PlayerPrefs.HasKey("casserole"))
         {
-            if(argent >= competences[0].prix && competenceGO == competences[0].self)
+            if(argent >= competences[0].prix && competenceGO == competences[0].self && competences[0].typeBonus == Achat.Competence.type.casserole)
             {
                 addCompetenceToplayer(1); 
                 PlayerPrefs.SetString("casserole", "true"); 
@@ -277,7 +288,7 @@ public class Helper : MonoBehaviour
             }
         }
 
-        else if(!PlayerPrefs.HasKey("louche"))
+        else if(!PlayerPrefs.HasKey("louche") && competences[1].typeBonus == Achat.Competence.type.louche)
         {
             if(argent >= competences[1].prix && competenceGO == competences[1].self)
             {
@@ -287,14 +298,14 @@ public class Helper : MonoBehaviour
                 competences[1].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
                 setArgent(competences[1].prix);
             }
-            else
+            else    
             {
                 throw new System.Exception("Pas assez d'argent");
             }
         }
         else if(!PlayerPrefs.HasKey("rappe"))
         {
-            if(argent >= competences[2].prix && competenceGO == competences[2].self)
+            if(argent >= competences[2].prix && competenceGO == competences[2].self && competences[2].typeBonus == Achat.Competence.type.rappe)
             {             
                 addCompetenceToplayer(3); 
                 PlayerPrefs.SetString("rappe", "true"); 
@@ -307,21 +318,22 @@ public class Helper : MonoBehaviour
                 throw new System.Exception("Pas assez d'argent");
             }
         }
-        else if(!PlayerPrefs.HasKey("biere"))
-        {
-            if(argent >= competences[3].prix && competenceGO == competences[3].self)
-            {
-                addCompetenceToplayer(4); 
-                PlayerPrefs.SetString("biere", "true"); 
-                PlayerPrefs.Save(); 
-                competences[3].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
-                setArgent(competences[3].prix);
-            }
-            else
-            {
-                throw new System.Exception("Pas assez d'argent");
-            }
-        }
+        // else if(!PlayerPrefs.HasKey("biere"))
+        // {
+        //     Debug.Log(competences[3].typeBonus == Achat.Competence.type.biere);
+        //     if(argent >= competences[3].prix && competenceGO == competences[3].self && competences[3].typeBonus == Achat.Competence.type.biere)
+        //     {
+        //         addCompetenceToplayer(4); 
+        //         PlayerPrefs.SetString("biere", "true"); 
+        //         PlayerPrefs.Save(); 
+        //         competences[3].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
+        //         setArgent(competences[3].prix);
+        //     }
+        //     else
+        //     {
+        //         throw new System.Exception("Pas assez d'argent");
+        //     }
+        // }
         GameObject.FindObjectOfType<Achat>().argent_txt.GetComponent<TextMeshProUGUI>().text = argent.ToString();
     }
 
@@ -380,7 +392,5 @@ public class Helper : MonoBehaviour
     private void Awake() 
     {
         argent = PlayerPrefs.GetInt("argent") != 0 ? PlayerPrefs.GetInt("argent") : 0;
-       pointActuel = 4000; 
-       updateScoreFinal(); 
     }
 }
