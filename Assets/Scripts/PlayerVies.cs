@@ -16,16 +16,7 @@ public class PlayerVies : MonoBehaviour
             emplacementsVies[i] = Emplacement.transform.GetChild(i).gameObject;
         }
     }
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void setVies(int i)
     {
         vies = i;

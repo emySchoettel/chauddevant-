@@ -102,6 +102,14 @@ public class PlayerMouvement : MonoBehaviour
                 }
             }
         }
+         
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Projectile.isFired = true;
+            Helper.createProjectile(GameObject.FindGameObjectWithTag("Player"));
+            Projectile.isFired = false;
+            return;
+        }
     }
 
     void TriggerVulnerability()
@@ -110,6 +118,7 @@ public class PlayerMouvement : MonoBehaviour
         {
             StartCoroutine(Vulnerability());
         }
+        invincibility = false;
     }
 
 
@@ -119,7 +128,7 @@ public class PlayerMouvement : MonoBehaviour
 
         anim.SetBool("blink", true);
 
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(1.5f);
 
         anim.SetBool("blink", false);
 

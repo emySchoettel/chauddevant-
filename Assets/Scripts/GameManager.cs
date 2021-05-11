@@ -36,6 +36,10 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SpawnJoueur() 
     {
+        if(Helper.pointActuel != 0)
+        {
+            Helper.pointActuel = 0; 
+        }
         GameObject positionGauche = GameObject.Find("GaucheJoueur");
         joueurActuel = Instantiate(joueurprefab, positionGauche.transform.position, Quaternion.identity);
         viesJoueur = joueurActuel.GetComponent<PlayerVies>();

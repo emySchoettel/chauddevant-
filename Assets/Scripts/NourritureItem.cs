@@ -34,15 +34,19 @@ public class NourritureItem : MonoBehaviour, Item
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.transform.CompareTag("Player"))
-        {
-            gm.verifyInventaire(this);
-        }
-        else if(other.transform.CompareTag("Bound"))
-        {
-            Destroy(gameObject);
-            clear = true; 
-            move = false; 
-        }
+        
+            if(other.transform.CompareTag("Player"))
+            {
+                if(!gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility())
+                {
+                    gm.verifyInventaire(this);
+                }
+            }
+            else if(other.transform.CompareTag("Bound"))
+            {
+                Destroy(gameObject);
+                clear = true; 
+                move = false; 
+            }
     }
 }
