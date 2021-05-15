@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Achats.unity
     guid: 0b5d46a99b0ee8440898190e9d57688f
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: bd204737fe9fbcf44bf8bd68123004e9
+  - enabled: 1
+    path: Assets/Scenes/AstuceDuChef.unity
+    guid: fdd459c0339ffaf4a97ada642a60baf6
   m_configObjects: {}

@@ -7,7 +7,8 @@ using TMPro;
 
 public class Helper : MonoBehaviour
 {
-    [SerializeField] private GameObject panel, tutoriel = null;
+    #region parameters
+    [SerializeField] private GameObject panel, tutoriel = null, ms_canvas = null; 
     private static int rand_position_int;
     public static bool isFade; 
 
@@ -39,6 +40,16 @@ public class Helper : MonoBehaviour
 
     private static int argent = 0; 
 
+    public static bool tuto = false; 
+
+    #endregion
+
+    private void Awake() 
+    {
+        argent = PlayerPrefs.GetInt("argent") != 0 ? PlayerPrefs.GetInt("argent") : 0;
+    }
+
+    #region argent
     public static int getArgent()
     {
         if(PlayerPrefs.HasKey("argent"))
@@ -80,6 +91,8 @@ public class Helper : MonoBehaviour
         PlayerPrefs.SetInt("argent", argent); 
         PlayerPrefs.Save(); 
     }
+
+    #endregion
 
     #region Debut du jeu 
     public void GoToLevel()
@@ -151,11 +164,15 @@ public class Helper : MonoBehaviour
         yield return new WaitForSeconds(seconds);
     }
 
+    #region fade
     public void Fading(bool fade, GameObject unpanel = null)
     {
         StartCoroutine(Fade(fade, unpanel));
     }
 
+    #endregion
+
+    #region directions items
     public static Vector3 randomPosition()
     {
         Vector3 res = new Vector3();
@@ -193,12 +210,18 @@ public class Helper : MonoBehaviour
         }
         return res; 
     }
+    #endregion
+
+    #region projectile
 
     public static void createProjectile(GameObject joueur)
     {
         Projectile proj = Instantiate(joueur.GetComponent<PlayerMouvement>().prefabProjectile, joueur.transform.GetChild(0).position, Quaternion.identity);
     }
 
+    #endregion
+
+    #region scoring
     public static void addPoints(int points, bool choix, item objet = item.rien)
     {
         pointActuel += points; 
@@ -208,7 +231,38 @@ public class Helper : MonoBehaviour
 
         updateScore();
     }
+    public static void updateScore()
+    {
+        GameObject txt = GameObject.Find("score_text");
+        if(txt != null)
+        {
+            txt.GetComponent<TextMeshProUGUI>().text = pointActuel.ToString();
+        }
+    }
 
+    public static void updateScoreFinal()
+    {
+        meilleurScore = PlayerPrefs.GetInt("meilleurScore"); 
+        if(pointActuel > meilleurScore)
+        {
+            meilleurScore = pointActuel; 
+            PlayerPrefs.SetInt("meilleurScore", meilleurScore); 
+        }     
+     
+        PlayerPrefs.Save(); 
+    }
+
+    public static int getMeilleurScore()
+    {
+        if(PlayerPrefs.HasKey("meilleurScore"))
+            return PlayerPrefs.GetInt("meilleurScore");
+        else
+            return 0;
+    }
+
+    #endregion
+
+    #region items
     public static void addItem(item objet)
     {
         switch(objet)
@@ -222,14 +276,9 @@ public class Helper : MonoBehaviour
             break; 
         }
     }
-    public static void updateScore()
-    {
-        GameObject txt = GameObject.Find("score_text");
-        if(txt != null)
-        {
-            txt.GetComponent<TextMeshProUGUI>().text = pointActuel.ToString();
-        }
-    }
+    #endregion
+
+    #region boutons
     public void click_retour()
     {
         //Time.timeScale = 0f; 
@@ -252,18 +301,74 @@ public class Helper : MonoBehaviour
             tutoriel.SetActive(true);
         }
     }
-    public static void updateScoreFinal()
+
+    public void click_retour_menu_principal()
     {
-        meilleurScore = PlayerPrefs.GetInt("meilleurScore"); 
-        if(pointActuel > meilleurScore)
+        if(panel != null)
         {
-            meilleurScore = pointActuel; 
-            PlayerPrefs.SetInt("meilleurScore", meilleurScore); 
-        }     
-     
-        PlayerPrefs.Save(); 
+            StartCoroutine(Fade(true));
+            StartCoroutine(WaitForLevel(0, true));
+        }
+        else
+            SceneManager.LoadScene(0);
     }
 
+    public void click_credits()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void click_achats()
+    {
+         if(panel != null)
+        {
+             StartCoroutine(Fade(true));
+            StartCoroutine(WaitForLevel(4, true));
+        }
+        else
+            SceneManager.LoadScene(4);
+    }
+
+    public void click_options()
+    {
+        if(panel != null)
+        {
+            StartCoroutine(Fade(true));
+            StartCoroutine(WaitForLevel(5, true));
+        }
+        else
+            SceneManager.LoadScene(5);
+    }
+
+     public void click_astuces()
+    {
+        if(panel != null)
+        {
+            StartCoroutine(Fade(true));
+            StartCoroutine(WaitForLevel(6, true));
+        }
+        else
+            SceneManager.LoadScene(6);
+    }
+
+    public void click_meilleur_score()
+    {
+        if(ms_canvas != null)
+            ms_canvas.SetActive(true);
+        
+        GameObject.FindObjectOfType<EcranTitreManager>().afficherMeilleurScore(); 
+    }
+
+    public void click_fermer_ms()
+    {
+        if(ms_canvas != null)
+            ms_canvas.SetActive(false);
+    }
+
+    #endregion
+
+
+    #region achats
     public void acheter()
     {
         
@@ -360,34 +465,9 @@ public class Helper : MonoBehaviour
         }
     }
 
-    public void click_retour_menu_principal()
-    {
-        if(panel != null)
-        {
-             StartCoroutine(Fade(true));
-            StartCoroutine(WaitForLevel(0, true));
-        }
-        else
-            SceneManager.LoadScene(0);
-    }
+    #endregion
 
-    public void click_credits()
-    {
-        SceneManager.LoadScene(2);
-    }
-
-    public void click_achats()
-    {
-         if(panel != null)
-        {
-             StartCoroutine(Fade(true));
-            StartCoroutine(WaitForLevel(4, true));
-        }
-        else
-            SceneManager.LoadScene(4);
-    }
-
-        
+    #region animation
     public static bool isPlaying(Animator anim, string stateName)
     {
         if (anim.GetCurrentAnimatorStateInfo(0).IsName(stateName) && anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
@@ -395,10 +475,6 @@ public class Helper : MonoBehaviour
         else
             return false;
     }
-    private void Awake() 
-    {
-        argent = PlayerPrefs.GetInt("argent") != 0 ? PlayerPrefs.GetInt("argent") : 0;
-    }
 
-   
+    #endregion  
 }
