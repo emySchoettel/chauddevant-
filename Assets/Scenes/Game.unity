@@ -1604,14 +1604,14 @@ RectTransform:
   m_GameObject: {fileID: 821604883}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.06738281}
-  m_LocalScale: {x: 0.39789823, y: 0.39789823, z: 0.39789823}
+  m_LocalScale: {x: 0.49486604, y: 0.49486604, z: 0.49486604}
   m_Children: []
   m_Father: {fileID: 1164839450}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.38254207, y: 0.6406431}
-  m_AnchoredPosition: {x: 1.8200073, y: 0.5708008}
+  m_AnchoredPosition: {x: 1.8200073, y: 11}
   m_SizeDelta: {x: 194.95123, y: 207.84808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &821604885
@@ -2456,14 +2456,14 @@ RectTransform:
   m_GameObject: {fileID: 1129264813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.06738281}
-  m_LocalScale: {x: 0.4281748, y: 0.4281748, z: 0.4281748}
+  m_LocalScale: {x: 0.5925083, y: 0.5925083, z: 0.5925083}
   m_Children: []
   m_Father: {fileID: 1164839450}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6675421, y: 0}
   m_AnchorMax: {x: 1, y: 0.6406431}
-  m_AnchoredPosition: {x: -3, y: -1.3399963}
+  m_AnchoredPosition: {x: -3, y: 9.089148}
   m_SizeDelta: {x: 169.18646, y: 212.73904}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1129264815
@@ -3509,14 +3509,14 @@ RectTransform:
   m_GameObject: {fileID: 2016114526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.06738281}
-  m_LocalScale: {x: 0.44682866, y: 0.44682866, z: 0.44682866}
+  m_LocalScale: {x: 0.58329016, y: 0.58329016, z: 0.58329016}
   m_Children: []
   m_Father: {fileID: 1164839450}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.32854828, y: 0}
   m_AnchorMax: {x: 0.6675421, y: 0.5873569}
-  m_AnchoredPosition: {x: 0.22840118, y: 2.3199997}
+  m_AnchoredPosition: {x: 0.22840118, y: 12.749144}
   m_SizeDelta: {x: 184.98245, y: 208.98306}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016114528
