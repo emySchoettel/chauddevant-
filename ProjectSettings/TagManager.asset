@@ -9,6 +9,8 @@ TagManager:
   - Dechet
   - Panel
   - Scoring
+  - Swipe
+  - Bouton
   layers:
   - Default
   - TransparentFX

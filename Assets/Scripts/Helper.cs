@@ -299,6 +299,7 @@ public class Helper : MonoBehaviour
         if(tutoriel != null)
         {
             tutoriel.SetActive(true);
+            GameObject.FindObjectOfType<EcranTitreManager>().afficherTuto();
         }
     }
 
@@ -477,4 +478,28 @@ public class Helper : MonoBehaviour
     }
 
     #endregion  
+
+    #region get
+
+    public static OptionsManager.modejeu getModeJeu()
+    {
+        if(PlayerPrefs.HasKey("option_mode_jeu"))
+        {
+            string modejeu = PlayerPrefs.GetString("option_mode_jeu");
+            if(modejeu == OptionsManager.modejeu.mouvements.ToString())
+            {
+                return OptionsManager.modejeu.mouvements;
+            }
+            else
+            {
+                return OptionsManager.modejeu.boutons;
+            }
+        }
+        else
+        {
+            return OptionsManager.modejeu.mouvements;
+        }
+    }
+
+    #endregion
 }

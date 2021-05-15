@@ -151,7 +151,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1293310002}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0255784, y: 0.5052265}
   m_AnchorMax: {x: 1, y: 0.6567422}
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Titre:  Chill Trap\r\nAuteur: Aries Beats\r\nSource: https://www.youtube.com/aries4rce\r"
+  m_text: credits_musiques
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -205,9 +205,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 18
-  m_fontSizeBase: 36
+  m_fontSizeBase: 18
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -387,6 +387,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245505730}
   m_CullTransparentMesh: 0
+--- !u!1 &321687678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321687680}
+  - component: {fileID: 321687679}
+  m_Layer: 0
+  m_Name: EcranMusiqueHelper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &321687679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321687678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42258fc0ec50e1a4fa5dd3cd2efef7e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  credits:
+  - {fileID: 336748188}
+  - {fileID: 370707774}
+  - {fileID: 61178391}
+  - {fileID: 952580628}
+  - {fileID: 1185578643}
+  - {fileID: 245505732}
+--- !u!4 &321687680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321687678}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 289.01044, y: 319.02118, z: -466.32428}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &336748186
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,11 +467,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1293310002}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05, y: 0.8537735}
   m_AnchorMax: {x: 1, y: 0.934}
-  m_AnchoredPosition: {x: -0.76400757, y: 1.6000061}
+  m_AnchoredPosition: {x: -5, y: 1.6000061}
   m_SizeDelta: {x: 2.4719849, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &336748188
@@ -443,7 +493,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Musique : '
+  m_text: Musique_titre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -470,7 +520,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.8
+  m_fontSize: 42.5
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -550,7 +600,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1293310002}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0255784, y: 0.68451566}
   m_AnchorMax: {x: 1, y: 0.84328926}
@@ -576,13 +626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Titre:  Dolling
-
-    Auteur: Cybersdf
-
-    Source: https://soundcloud.com/cybersdf
-
-'
+  m_text: credits_musiques
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -609,10 +653,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.4
+  m_fontSize: 18
   m_fontSizeBase: 18
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -757,11 +801,11 @@ RectTransform:
   m_Children:
   - {fileID: 245505731}
   m_Father: {fileID: 1293310002}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22100002, y: 0.061000004}
   m_AnchorMax: {x: 0.76500005, y: 0.104257844}
-  m_AnchoredPosition: {x: 2, y: 1.2000122}
+  m_AnchoredPosition: {x: 2, y: -1}
   m_SizeDelta: {x: 4, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915062835
@@ -885,13 +929,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1293310002}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0255784, y: 0.35512552}
   m_AnchorMax: {x: 1, y: 0.44400004}
-  m_AnchoredPosition: {x: 4, y: 1}
+  m_AnchoredPosition: {x: 2.4136963, y: -65}
   m_SizeDelta: {x: 4.8273315, y: -1.8720055}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5000001}
 --- !u!114 &952580628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,7 +955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Equipe : \n"
+  m_text: equipe_titre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -938,7 +982,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.4
+  m_fontSize: 41.85
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1096,11 +1140,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069141143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.38755, y: -93.29927, z: -106.55207}
+  m_LocalPosition: {x: 119.11245, y: 177.70073, z: -106.55207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1293310002}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1069141145
 MonoBehaviour:
@@ -1116,6 +1160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
   tutoriel: {fileID: 0}
+  ms_canvas: {fileID: 0}
   tab_nourriture: []
 --- !u!1 &1185578641
 GameObject:
@@ -1147,11 +1192,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1293310002}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0255784, y: 0.287}
   m_AnchorMax: {x: 1, y: 0.36383632}
-  m_AnchoredPosition: {x: 4, y: -20}
+  m_AnchoredPosition: {x: -3.3629, y: -89}
   m_SizeDelta: {x: 4.8273315, y: -1.7657013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1185578643
@@ -1173,7 +1218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D\xE9veloppement : Schoettel Emy"
+  m_text: developpement
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1200,10 +1245,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.4
+  m_fontSize: 18
   m_fontSizeBase: 18
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1280,11 +1325,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1293310002}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 84, y: 0}
+  m_AnchoredPosition: {x: 84, y: 13}
   m_SizeDelta: {x: 470.94458, y: -46.59247}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1292013041
@@ -1414,7 +1459,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1069141144}
   - {fileID: 1292013040}
   - {fileID: 1574585663}
   - {fileID: 915062834}
@@ -1461,12 +1505,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1293310002}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.266}
   m_AnchorMax: {x: 1, y: 0.97551566}
-  m_AnchoredPosition: {x: -4.399994, y: 1.300003}
-  m_SizeDelta: {x: 31.124146, y: -0.23165894}
+  m_AnchoredPosition: {x: -4.399994, y: -41.39}
+  m_SizeDelta: {x: 31.124146, y: 85.14841}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1574585664
 MonoBehaviour:

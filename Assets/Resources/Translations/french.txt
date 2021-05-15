@@ -1,0 +1,49 @@
+; Ceci est un commentaire !
+
+[Menu principal]
+titreJeu = Chaud devant !
+bouton.jouer = Jouer
+bouton.tutoriel = Tutoriel
+bouton.achats = Achats
+bouton.astuces = Astuces 
+bouton.scores = Scores 
+bouton.options = Options
+bouton.credits = Crédits
+bouton.quitter = Quitter
+
+[Menus]
+bouton.menuprincipal = Menu principal
+
+[Options]
+options.titre = Options
+options.mode.titre = Mode de jeu
+options.mouvements.titre = Mouvements
+options.boutons.titre = Boutons
+options.description.mouvements = Vous jouez actuellement avec les mouvements tactiles
+options.description.boutons = Vous jouez actuellement avec les boutons tactiles
+
+[Jeu]
+commande.titre = Commande
+
+score.titre = Score :
+scoreactuel.titre = Score actuel : 
+meilleurscore.titre = Meilleur Score : 
+
+[Credits]
+credits.equipe.titre = Équipe :
+credits.equipe.equipe = Développement : Schoettel Emy 
+credits.musique.titre = Musiques : 
+credits.musique.bgm.ecrantitre = Titre:  Dolling<br>Auteur: Cybersdf<br>Source: https://soundcloud.com/cybersdf
+credits.musique.bgm.jeu = Titre:  Chill Trap<br>Auteur: Aries Beats<br>Source: https://www.youtube.com/aries4rce
+
+[Tutoriel] 
+tutoriel.commandes.titre = Commandes :
+tutoriel.swipe.description = SWIPE : mouvement tactile de droite à gauche et inversement pour passer d'un couloir à un autre
+tutoriel.tap.description = TAP : pression tactile pour lancer un projectile sur les objets 
+tutoriel.item.titre = Objets rencontrés : 
+tutoriel.arecolter.titre = À récolter
+tutoriel.aeliminer.titre = À éliminer 
+bouton.modetutoriel = Partie tutoriel
+
+
+

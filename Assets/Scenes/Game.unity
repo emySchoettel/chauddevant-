@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score :'
+  m_text: score txt
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.6
+  m_fontSize: 50.45
   m_fontSizeBase: 11
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2810,6 +2810,9 @@ MonoBehaviour:
   GameOverPanel: {fileID: 531375980}
   GameOverScoring: {fileID: 1059574247}
   Scoring: {fileID: 1723231403}
+  locales:
+  - {fileID: 1884976514}
+  - {fileID: 358537276}
 --- !u!4 &1312311599
 Transform:
   m_ObjectHideFlags: 0
@@ -3217,7 +3220,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.2
+  m_fontSize: 72
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3279,7 +3282,7 @@ GameObject:
   - component: {fileID: 1884976515}
   - component: {fileID: 1884976514}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: commande tmp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3323,7 +3326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Commande
+  m_text: txt commande
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -3350,7 +3353,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.5
+  m_fontSize: 65.65
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1

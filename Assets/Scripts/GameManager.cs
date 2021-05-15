@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System; 
+using TMPro; 
 using Lean.Touch; 
 public class GameManager : MonoBehaviour
 {
+    #region parameters
     //Prefab
     [SerializeField] private PlayerMouvement joueurprefab;
     [SerializeField] private PlayerMouvement joueurActuel; 
@@ -17,12 +19,21 @@ public class GameManager : MonoBehaviour
 
     private bool endGame; 
 
+    [SerializeField]
+    private List<TextMeshProUGUI> locales; 
+
+    #endregion
+
    private void Awake() 
     { 
         if(Helper.isFade)
         {
             GO_Helper.Fading(false);
         }
+        
+        //Locales
+        locales[0].text = Translation.Get("commande.titre"); 
+        locales[1].text = Translation.Get("score.titre");
     }
     // Start is called before the first frame update
     void Start()

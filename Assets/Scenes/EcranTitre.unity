@@ -1369,7 +1369,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1500531809}
-        m_MethodName: click_achats
+        m_MethodName: click_astuces
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2221,7 +2221,7 @@ GameObject:
   - component: {fileID: 928569936}
   - component: {fileID: 928569935}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: achats TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2265,7 +2265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Achats '
+  m_text: sc achats
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -2635,7 +2635,7 @@ GameObject:
   - component: {fileID: 1081220578}
   - component: {fileID: 1081220577}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: options tmp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2679,7 +2679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Options
+  m_text: sc options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -3309,7 +3309,7 @@ GameObject:
   - component: {fileID: 1289115064}
   - component: {fileID: 1289115063}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: credits tmp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3353,7 +3353,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cr\xE9dits\n"
+  m_text: sc cred
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -4166,7 +4166,7 @@ GameObject:
   - component: {fileID: 1567572947}
   - component: {fileID: 1567572946}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: jouer TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4210,7 +4210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jouer
+  m_text: sc jeu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -4643,7 +4643,7 @@ GameObject:
   - component: {fileID: 1681863259}
   - component: {fileID: 1681863258}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: tuto TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4687,7 +4687,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tutoriel
+  m_text: canvas tuto
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -4776,7 +4776,7 @@ GameObject:
   - component: {fileID: 1684878780}
   - component: {fileID: 1684878779}
   m_Layer: 5
-  m_Name: Score
+  m_Name: Score TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4820,9 +4820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Scores
-
-'
+  m_text: canvas scores
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -5102,6 +5100,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt_argent: {fileID: 1258701156}
   ms_canvas: {fileID: 327359186}
+  UI:
+  - {fileID: 1879739033}
+  - {fileID: 1567572946}
+  - {fileID: 1681863258}
+  - {fileID: 928569935}
+  - {fileID: 1889329363}
 --- !u!4 &1824958284
 Transform:
   m_ObjectHideFlags: 0
@@ -5246,7 +5250,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CHAUD DEVANT !
+  m_text: titre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -5335,7 +5339,7 @@ GameObject:
   - component: {fileID: 1889329364}
   - component: {fileID: 1889329363}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: astuce TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5379,9 +5383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Astuces
-
-'
+  m_text: sc astuces
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -5932,7 +5934,7 @@ GameObject:
   - component: {fileID: 2093056663}
   - component: {fileID: 2093056662}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: quitter tmp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5976,7 +5978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUITTER
+  m_text: sc quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
