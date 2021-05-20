@@ -15,6 +15,5 @@ public class EcranCreditManager : MonoBehaviour
 
         credits[3].text = Translation.Get("credits.equipe.titre");
         credits[4].text = Translation.Get("credits.equipe.equipe");
-        credits[5].text = Translation.Get("bouton.menuprincipal");
     }
 }
