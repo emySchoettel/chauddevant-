@@ -30,7 +30,7 @@ public class DechetItem : MonoBehaviour, Item
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-         if(other.transform.CompareTag("Bound"))
+        if(other.transform.CompareTag("Bound"))
         {
             move = false;
             Destroy(gameObject);
@@ -38,13 +38,16 @@ public class DechetItem : MonoBehaviour, Item
         else if(other.transform.CompareTag("Player"))
         {
             bool invincibility = gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility();
-            Debug.Log(invincibility);
 
             if(gm.getPlayer().GetComponent<PlayerVies>().haslifes() && !invincibility)
             {
                 gm.dechetToPlayer();
             }
             move = false; 
+        }
+        else if(other.transform.CompareTag("Nourriture"))
+        {
+            Destroy(gameObject);
         }
         // if(other.transform.CompareTag("Player") && !gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility())
         // {

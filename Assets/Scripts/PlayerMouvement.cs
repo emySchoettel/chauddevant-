@@ -19,7 +19,21 @@ public class PlayerMouvement : MonoBehaviour
 
     private Animator anim; 
 
-    // Start is called before the first frame update
+    private bool multipleTirs = false; 
+
+    public static int tirs = 0; 
+
+    private void Awake() 
+    {
+        // if(PlayerPrefs.HasKey("multiplesTirs"))    
+        // {
+        //     if(PlayerPrefs.GetInt("multiplesTirs") == 1)
+        //     {
+        //         multipleTirs = true; 
+        //     }
+        // }
+        multipleTirs = true;
+    }
     void Start()
     {
         anim = GetComponent<Animator>(); 
@@ -28,8 +42,9 @@ public class PlayerMouvement : MonoBehaviour
         GetPositions();
         if(positions.Length != 0)
         {
-            gameObject.transform.position = StartPosition();
-            directionActuelle = Helper.directions.milieu;
+            //gameObject.transform.position = StartPosition();
+            gameObject.transform.position = positions[0].transform.position;
+            directionActuelle = Helper.directions.gauche;
         }
     }
 
@@ -103,12 +118,23 @@ public class PlayerMouvement : MonoBehaviour
             }
         }
          
+        //TODO ajouter les conditions dans le tap
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Projectile.isFired = true;
-            Helper.createProjectile(GameObject.FindGameObjectWithTag("Player"));
-            Projectile.isFired = false;
-            return;
+            if(!Projectile.isFired && !multipleTirs)
+            {
+                Projectile.isFired = true;
+                Helper.createProjectile(GameObject.FindGameObjectWithTag("Player"));
+                return;
+            }
+            else if(multipleTirs)
+            {
+                if(tirs < 3)
+                {
+                    Helper.createProjectile(GameObject.FindGameObjectWithTag("Player"));
+                    return; 
+                }
+            }
         }
     }
 
@@ -143,12 +169,15 @@ public class PlayerMouvement : MonoBehaviour
         {
             case 0:
                 res = positions[0].transform.position;
+                directionActuelle = Helper.directions.gauche;
             break; 
             case 2:
                 res = positions[2].transform.position;
+                directionActuelle = Helper.directions.milieu;
             break; 
             default: 
                 res = positions[1].transform.position;
+                directionActuelle = Helper.directions.droite;
             break; 
         }
         return res;

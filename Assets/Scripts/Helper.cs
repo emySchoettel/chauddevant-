@@ -382,6 +382,7 @@ public class Helper : MonoBehaviour
             if(argent >= competences[0].prix && competenceGO == competences[0].self && competences[0].typeBonus == Achat.Competence.type.casserole)
             {
                 addCompetenceToplayer(1); 
+                competences[0].estAchete = true; 
                 PlayerPrefs.SetString("casserole", "true"); 
                 PlayerPrefs.Save(); 
                 competences[0].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
@@ -399,6 +400,7 @@ public class Helper : MonoBehaviour
             if(argent >= competences[1].prix && competenceGO == competences[1].self)
             {
                 addCompetenceToplayer(2); 
+                competences[1].estAchete = true; 
                 PlayerPrefs.SetString("louche", "true"); 
                 PlayerPrefs.Save(); 
                 competences[1].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
@@ -414,6 +416,8 @@ public class Helper : MonoBehaviour
             if(argent >= competences[2].prix && competenceGO == competences[2].self && competences[2].typeBonus == Achat.Competence.type.rappe)
             {             
                 addCompetenceToplayer(3); 
+                competences[2].estAchete = true; 
+                PlayerPrefs.SetInt("multiplesTirsBool", 1);
                 PlayerPrefs.SetString("rappe", "true"); 
                 PlayerPrefs.Save(); 
                 competences[2].self.transform.GetChild(5).GetComponent<Button>().interactable = false;

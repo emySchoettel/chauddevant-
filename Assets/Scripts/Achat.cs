@@ -27,6 +27,9 @@ public class Achat : MonoBehaviour
         public Sprite image; 
         public int prix; 
         public GameObject self;
+
+        public bool estAchete = false;
+
     }
 
     public static bool isNext; 

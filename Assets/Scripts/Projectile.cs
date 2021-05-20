@@ -9,6 +9,11 @@ public class Projectile : MonoBehaviour
     private bool move = true; 
 
     public static bool isFired = false; 
+
+    private void Start() 
+    {
+        PlayerMouvement.tirs++; 
+    }
     
     public void Move()
     {
@@ -25,6 +30,8 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
+        isFired = false;
+        PlayerMouvement.tirs--;
         if(other.transform.CompareTag("Dechet"))
         {
             Destroy(other.gameObject);
@@ -39,5 +46,7 @@ public class Projectile : MonoBehaviour
         }
         else
             move = false; 
+        
+        
     }
 }
