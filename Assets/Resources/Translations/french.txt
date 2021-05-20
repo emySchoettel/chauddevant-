@@ -45,5 +45,9 @@ tutoriel.arecolter.titre = À récolter
 tutoriel.aeliminer.titre = À éliminer 
 bouton.modetutoriel = Partie tutoriel
 
+[Achats]
+achats.bouton.skins = Apparence
+achats.bouton.competences = Compétences
+
 
 

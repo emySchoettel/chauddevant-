@@ -35,6 +35,9 @@ public class Achat : MonoBehaviour
     public static bool isNext; 
 
     public List<Competence> competences; 
+
+    [SerializeField]
+    private Button competencesBtn, skinBtn;
     private void Awake() 
     {
         if(PlayerPrefs.GetInt("argent") != 0)
@@ -92,6 +95,11 @@ public class Achat : MonoBehaviour
         }
     }
 
+    private void Start() 
+    {
+        skinBtn = GameObject.Find("Skin_bouton").GetComponent<Button>();
+        competencesBtn = GameObject.Find("Competences_bouton").GetComponent<Button>();
+    }
     public void nextPage()
     {
         int i = 3;
@@ -148,5 +156,25 @@ public class Achat : MonoBehaviour
     public List<Competence> getCompetences()
     {
         return competences;
+    }
+
+    public void click_skin()
+    {
+        competencesBtn.interactable = true; 
+        skinBtn.interactable = false; 
+        changePage(true);
+    }
+
+    public void click_competence()
+    {
+        competencesBtn.interactable = false; 
+        skinBtn.interactable = true; 
+        changePage(false);
+    }
+
+    // true : skin; false : competence
+    public void changePage(bool choix)
+    {
+
     }
 }
