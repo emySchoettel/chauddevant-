@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System; 
 using TMPro; 
 using Lean.Touch; 
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
     private PlayerVies viesJoueur; 
     [SerializeField] private ItemController itemController;
     [SerializeField] private Helper GO_Helper; 
-    [SerializeField] private GameObject GameOver, GameOverPanel, GameOverScoring, Scoring;
+    [SerializeField] private GameObject GameOver, GameOverPanel, GameOverScoring, Scoring, Panel_action;
 
    
 
@@ -30,6 +31,11 @@ public class GameManager : MonoBehaviour
         {
             GO_Helper.Fading(false);
         }
+
+        if(Panel_action == null)
+        {
+            Panel_action = GameObject.Find("Panel_action");
+        }
         
         //Locales
         locales[0].text = Translation.Get("commande.titre"); 
@@ -43,6 +49,25 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SpawnCommande());
         Commande.preparerCommande();
         Inventaire.createInventaire();
+    }
+
+    public void activePanel(bool couleur)
+    {
+        StartCoroutine(letActivePanel(couleur));
+    }
+
+    public IEnumerator letActivePanel(bool couleur)
+    {
+        //Si le joueur s'est pris un coup 
+        if(couleur)
+            Panel_action.GetComponent<Image>().color = new Color(1f, 0f, 0f, 0.5176f); 
+        else 
+            Panel_action.GetComponent<Image>().color = Color.white;
+
+        Panel_action.SetActive(true);
+        yield return new WaitForSeconds(.5f); 
+        Panel_action.SetActive(false);
+        yield return new WaitForSeconds(.5f); 
     }
 
     private IEnumerator SpawnJoueur() 
@@ -155,9 +180,11 @@ public class GameManager : MonoBehaviour
                 Inventaire.addItemInventaire(gameObject.GetComponent<NourritureItem>());
                 Helper.addPoints(20, false);
                 Commande.commandeActuelle++; 
+                activePanel(false);
             }
             else
             {
+                activePanel(true);
                 dechetToPlayer();
             }
         }

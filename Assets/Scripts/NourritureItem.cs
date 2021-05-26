@@ -39,6 +39,7 @@ public class NourritureItem : MonoBehaviour, Item
             {
                 if(!gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility())
                 {
+                   
                     gm.verifyInventaire(this);
                 }
             }

@@ -37,6 +37,7 @@ public class DechetItem : MonoBehaviour, Item
         }
         else if(other.transform.CompareTag("Player"))
         {
+            gm.activePanel(true);
             bool invincibility = gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility();
 
             if(gm.getPlayer().GetComponent<PlayerVies>().haslifes() && !invincibility)
