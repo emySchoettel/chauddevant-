@@ -366,6 +366,16 @@ public class Helper : MonoBehaviour
             ms_canvas.SetActive(false);
     }
 
+    public void click_suiv_bouton_tuto()
+    {
+
+    }
+
+    public void click_prec_bouton_tuto()
+    {
+        
+    }
+
     #endregion
 
 
