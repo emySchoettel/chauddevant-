@@ -11,6 +11,7 @@ TagManager:
   - Scoring
   - Swipe
   - Bouton
+  - cadre
   layers:
   - Default
   - TransparentFX

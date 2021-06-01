@@ -28,27 +28,32 @@ public class Commande : MonoBehaviour
     private void OnEnable() 
     {
         helper = GameObject.Find("Helper").GetComponent<Helper>();
-        itemController = GameObject.FindObjectOfType<ItemController>().GetComponent<ItemController>();
+        if(GameObject.FindObjectOfType<ItemController>() != null)
+            itemController = GameObject.FindObjectOfType<ItemController>().GetComponent<ItemController>();
     }
     
     public static void preparerCommande()
     {
-        itemController = GameObject.FindObjectOfType<ItemController>(); 
-        nourrituresTab = itemController.getTabNourritures(); 
-        positionsCommande = itemController.getTabPositionsCommande(); 
+        itemController = GameObject.FindObjectOfType<ItemController>() ? GameObject.FindObjectOfType<ItemController>() : null; 
+        
 
-        for(int i = 0; i < 3; i++)
+        if(itemController != null)
         {
-            //Preparer le numero aleatoire
-            int indexItemCommande = Random.Range(0,nourrituresTab.Length);
-            
-            //Ajouter a la liste
-            commande.Add(nourrituresTab[indexItemCommande]);
-            positionsCommande[i].GetComponent<Image>().sprite = commande[i].GetComponent<SpriteRenderer>().sprite;
-            positionsCommande[i].GetComponent<Image>().enabled = true;
-            Helper.nourriture type = nourrituresTab[i].GetComponent<NourritureItem>().type;
-            positionsCommande[i].AddComponent<CommandeItem>(); 
-            positionsCommande[i].GetComponent<CommandeItem>().nourriture = type;  
+            nourrituresTab = itemController.getTabNourritures(); 
+            positionsCommande = itemController.getTabPositionsCommande(); 
+            for(int i = 0; i < 3; i++)
+            {
+                //Preparer le numero aleatoire
+                int indexItemCommande = Random.Range(0,nourrituresTab.Length);
+                
+                //Ajouter a la liste
+                commande.Add(nourrituresTab[indexItemCommande]);
+                positionsCommande[i].GetComponent<Image>().sprite = commande[i].GetComponent<SpriteRenderer>().sprite;
+                positionsCommande[i].GetComponent<Image>().enabled = true;
+                Helper.nourriture type = nourrituresTab[i].GetComponent<NourritureItem>().type;
+                positionsCommande[i].AddComponent<CommandeItem>(); 
+                positionsCommande[i].GetComponent<CommandeItem>().nourriture = type;  
+            }
         }
     }
 }

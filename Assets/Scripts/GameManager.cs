@@ -8,20 +8,20 @@ using Lean.Touch;
 public class GameManager : MonoBehaviour
 {
     #region parameters
-    //Prefab
-    [SerializeField] private PlayerMouvement joueurprefab;
-    [SerializeField] private PlayerMouvement joueurActuel; 
-    private PlayerVies viesJoueur; 
-    [SerializeField] private ItemController itemController;
-    [SerializeField] private Helper GO_Helper; 
-    [SerializeField] private GameObject GameOver, GameOverPanel, GameOverScoring, Scoring, Panel_action;
+        //Prefab
+        [SerializeField] private PlayerMouvement joueurprefab;
+        [SerializeField] private PlayerMouvement joueurActuel; 
+        private PlayerVies viesJoueur; 
+        [SerializeField] private ItemController itemController;
 
-   
+        [SerializeField] private TutoManager tutoManager; 
+        [SerializeField] private Helper GO_Helper; 
+        [SerializeField] private GameObject GameOver, GameOverPanel, GameOverScoring, Scoring, Panel_action;
+        private bool endGame; 
 
-    private bool endGame; 
+        [SerializeField] static private bool tutoriel = false; 
 
-    [SerializeField]
-    private List<TextMeshProUGUI> locales; 
+        [SerializeField] private List<TextMeshProUGUI> locales; 
 
     #endregion
 
@@ -44,11 +44,29 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnJoueur());
-        StartCoroutine(SpawnNourriture());
-        StartCoroutine(SpawnCommande());
-        Commande.preparerCommande();
-        Inventaire.createInventaire();
+        tutoriel = true; 
+        if(!tutoriel)
+        {
+            StartCoroutine(SpawnJoueur());
+            StartCoroutine(SpawnNourriture());
+            StartCoroutine(SpawnCommande());
+            Commande.preparerCommande();
+            Inventaire.createInventaire();
+        }
+        else
+        {
+            tutoManager = Instantiate(tutoManager, new Vector3(0,0,0), Quaternion.identity);
+            //Add cadres
+            // cadre = GameObject.Find(nom.ToString()) ? GameObject.Find(nom.ToString()) : null;
+            //     Debug.Log(cadre.name);
+            //     if(cadre != null)
+            //         tutoManager.cadres.Add(cadre); 
+            
+            StartCoroutine(SpawnJoueur());
+            StartCoroutine(SpawnCommande());
+            Commande.preparerCommande();
+            Inventaire.createInventaire(); 
+        }
     }
 
     public void activePanel(bool couleur)
@@ -199,6 +217,16 @@ public class GameManager : MonoBehaviour
     public ItemController GetItemController()
     {
         return itemController;
+    }
+
+    public static bool GetBoolTutoriel()
+    {
+        return tutoriel; 
+    }
+
+    public static void SetBoolTutoriel(bool choix)
+    {
+        tutoriel = choix; 
     }
 
     #endregion

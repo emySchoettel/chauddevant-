@@ -41,6 +41,9 @@ public class EcranTitreManager : MonoBehaviour
         UI[14].text = Translation.Get("tutoriel.aeliminer.titre");
         UI[15].text = Translation.Get("bouton.modetutoriel");
 
+        UI[16].text = Translation.Get("tutoriel.secondepage.commande.explications");
+        UI[17].text = Translation.Get("tutoriel.secondepage.score.explications");
+
     }
 
     private void Awake() 
