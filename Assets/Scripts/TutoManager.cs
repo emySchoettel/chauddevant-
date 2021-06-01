@@ -7,12 +7,11 @@ public class TutoManager : MonoBehaviour
     public List<GameObject> cadres;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

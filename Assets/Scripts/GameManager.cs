@@ -57,10 +57,12 @@ public class GameManager : MonoBehaviour
         {
             tutoManager = Instantiate(tutoManager, new Vector3(0,0,0), Quaternion.identity);
             //Add cadres
-            // cadre = GameObject.Find(nom.ToString()) ? GameObject.Find(nom.ToString()) : null;
-            //     Debug.Log(cadre.name);
-            //     if(cadre != null)
-            //         tutoManager.cadres.Add(cadre); 
+            GameObject[] cadres = GameObject.FindGameObjectsWithTag("cadre"); 
+            
+            for (int i = 0; i < cadres.Length; i++)
+            {
+                tutoManager.cadres.Add(cadres[i]);
+            }
             
             StartCoroutine(SpawnJoueur());
             StartCoroutine(SpawnCommande());
