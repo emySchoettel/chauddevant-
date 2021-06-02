@@ -26,7 +26,8 @@ public class ItemController : MonoBehaviour
 
     void Start()
     {
-        Invoke("StartNourriture", 0.5f);
+        if(!GameManager.GetBoolTutoriel())
+            Invoke("StartNourriture", 0.5f);
     }
 
     void StartNourriture()

@@ -43,9 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9270af89b9003647afebbf98a82644e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cadres:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  cadres: []
+  textMeshProUGUI: {fileID: 0}
+  stage: 0

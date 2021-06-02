@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tutoriel = true; 
+        //tutoriel = true; 
         if(!tutoriel)
         {
             StartCoroutine(SpawnJoueur());
@@ -55,20 +55,27 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            tutoManager = Instantiate(tutoManager, new Vector3(0,0,0), Quaternion.identity);
+            TutoManager tutoManagerGO = Instantiate(tutoManager, new Vector3(), Quaternion.identity);
             //Add cadres
             GameObject[] cadres = GameObject.FindGameObjectsWithTag("cadre"); 
             
             for (int i = 0; i < cadres.Length; i++)
             {
-                tutoManager.cadres.Add(cadres[i]);
+                tutoManagerGO.cadres.Add(cadres[i]);
             }
+            tutoManagerGO.cadres[0].SetActive(true);
             
             StartCoroutine(SpawnJoueur());
+            StartCoroutine(SpawnNourriture());
             StartCoroutine(SpawnCommande());
             Commande.preparerCommande();
             Inventaire.createInventaire(); 
         }
+    }
+
+    public void launchGame()
+    {
+
     }
 
     public void activePanel(bool couleur)

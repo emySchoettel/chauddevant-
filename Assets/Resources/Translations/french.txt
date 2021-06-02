@@ -47,9 +47,12 @@ bouton.modetutoriel = Partie tutoriel
 tutoriel.secondepage.commande.explications = La commande est composée de 3 ingrédients. Il faut les attraper dans l'ordre : de la gauche vers la droite.
 tutoriel.secondepage.score.explications = Les toques représentent les vies.<br>Le score actuel est en dessous. Le but est d'obtenir le plus de points et de valider la commande en cours !
 
+tutoriel.jeu.pt1 = Ce sont les trois ingrédients à récupérer. Il faut les récupérer dans l'ordre suivant : de gauche à droite, pour gagner la partie ! 
+tutoriel.jeu.pt2 = Il y a trois vies avant de rater la commande !
+tutoriel.jeu.pt3 = Il y a aussi le score. À savoir que les points reviennent en or par tranche de 10 en fin de niveau. 
+tutoriel.jeu.pt4 = De là-haut tombent les ingrédients et les déchets aléatoirement. 
+tutoriel.jeu.pt5 = Ici c'est la zone de jeu pour se déplacer et pour tirer. 
+
 [Achats]
 achats.bouton.skins = Apparence
 achats.bouton.competences = Compétences
-
-
-
