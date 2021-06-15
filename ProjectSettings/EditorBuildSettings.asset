@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AstuceDuChef.unity
     guid: fdd459c0339ffaf4a97ada642a60baf6
+  - enabled: 1
+    path: Assets/Scenes/TutoScene.unity
+    guid: f40aed933b837394d9f6ebc76c678959
   m_configObjects: {}

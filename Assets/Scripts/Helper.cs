@@ -102,6 +102,12 @@ public class Helper : MonoBehaviour
         StartCoroutine(Fade(true));
         StartCoroutine(WaitForLevel(1, true));
     }
+
+    public void GoToLevel(int level)
+    {
+        StartCoroutine(Fade(true));
+        StartCoroutine(WaitForLevel(level, true));
+    }
     public IEnumerator WaitForLevel(int nombrelevel, bool raison)
     {
         yield return new WaitForSeconds(3f);
@@ -395,8 +401,8 @@ public class Helper : MonoBehaviour
 
     public void click_partie_tuto()
     {
-        GameManager.SetBoolTutoriel(true);
-        GoToLevel();
+        GameManager.setTutoriel(true);
+        GoToLevel(7);
     }
 
     #endregion

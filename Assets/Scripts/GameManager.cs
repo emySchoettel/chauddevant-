@@ -17,9 +17,9 @@ public class GameManager : MonoBehaviour
         [SerializeField] private TutoManager tutoManager; 
         [SerializeField] private Helper GO_Helper; 
         [SerializeField] private GameObject GameOver, GameOverPanel, GameOverScoring, Scoring, Panel_action;
-        private bool endGame; 
+        private bool endGame;
 
-        [SerializeField] static private bool tutoriel = false; 
+        [SerializeField] private static bool tutoriel = false; 
 
         [SerializeField] private List<TextMeshProUGUI> locales; 
 
@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
 
    private void Awake() 
     { 
+        if(tutoriel != null)
+        {
+            
+        }
         if(Helper.isFade)
         {
             GO_Helper.Fading(false);
@@ -44,33 +48,11 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //tutoriel = true; 
-        if(!tutoriel)
-        {
-            StartCoroutine(SpawnJoueur());
-            StartCoroutine(SpawnNourriture());
-            StartCoroutine(SpawnCommande());
-            Commande.preparerCommande();
-            Inventaire.createInventaire();
-        }
-        else
-        {
-            TutoManager tutoManagerGO = Instantiate(tutoManager, new Vector3(), Quaternion.identity);
-            //Add cadres
-            GameObject[] cadres = GameObject.FindGameObjectsWithTag("cadre"); 
-            
-            for (int i = 0; i < cadres.Length; i++)
-            {
-                tutoManagerGO.cadres.Add(cadres[i]);
-            }
-            tutoManagerGO.cadres[0].SetActive(true);
-            
-            StartCoroutine(SpawnJoueur());
-            StartCoroutine(SpawnNourriture());
-            StartCoroutine(SpawnCommande());
-            Commande.preparerCommande();
-            Inventaire.createInventaire(); 
-        }
+        StartCoroutine(SpawnJoueur());
+        StartCoroutine(SpawnNourriture());
+        StartCoroutine(SpawnCommande());
+        Commande.preparerCommande();
+        Inventaire.createInventaire();
     }
 
     public void launchGame()
@@ -228,14 +210,14 @@ public class GameManager : MonoBehaviour
         return itemController;
     }
 
-    public static bool GetBoolTutoriel()
+    public static bool getTutoriel()
     {
         return tutoriel; 
     }
 
-    public static void SetBoolTutoriel(bool choix)
+    public static void setTutoriel(bool choix)
     {
-        tutoriel = choix; 
+        tutoriel = choix;
     }
 
     #endregion
