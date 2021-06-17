@@ -6,12 +6,17 @@ using TMPro;
 
 public class TutoManager : MonoBehaviour
 {
-    public List<GameObject> cadres;
+    public List<GameObject> cadres, nourritures, dechets;
     [SerializeField] private TextMeshProUGUI textMeshProUGUI; 
-    [SerializeField] private int stage = 0; 
-    private GameObject currentcadre; 
+    [SerializeField] private int stage = 1; 
+    [SerializeField] private GameObject currentcadre, panel; 
     void Start()
     {
+
+        if(panel != null)
+        {
+            panel.SetActive(true);
+        }
         if(GameObject.Find("tmp_explications") != null)
             textMeshProUGUI = GameObject.Find("tmp_explications").GetComponent<TextMeshProUGUI>();
         
@@ -28,6 +33,7 @@ public class TutoManager : MonoBehaviour
     IEnumerator LetsTutorielBegin()
     {
         Debug.Log("start coroutine");
+        yield return ReadText();
 //        while(Input.GetTouch(0).phase != TouchPhase.Began || !Input.GetMouseButtonDown(0))
         for (int i = 0; i < 6; i++)
         {
@@ -46,7 +52,6 @@ public class TutoManager : MonoBehaviour
                 Debug.Log("end of tutoriel");
                 EndOfTutoriel(); 
             }
-            
         }
     }
 

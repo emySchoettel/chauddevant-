@@ -545,4 +545,16 @@ public class Helper : MonoBehaviour
     }
 
     #endregion
+
+    #region otherStuff
+
+    public void checkTutorielPanel()
+    {
+        if(tutoriel.activeSelf == true)
+        {
+            tutoriel.SetActive(false);
+        }
+    }
+
+    #endregion
 }

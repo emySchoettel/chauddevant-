@@ -15,7 +15,6 @@ public class EcranTitreManager : MonoBehaviour
     [SerializeField]
     private List<TextMeshProUGUI> UI; 
 
-
     private void Start() 
     {
         if(txt_argent != null)
@@ -50,7 +49,11 @@ public class EcranTitreManager : MonoBehaviour
     {
         if(ms_canvas != null && ms_canvas.activeSelf == true)
             ms_canvas.SetActive(false);
+
+        GameObject.Find("Helper").GetComponent<Helper>().checkTutorielPanel();
+
     }
+    
 
     public void afficherMeilleurScore()
     {

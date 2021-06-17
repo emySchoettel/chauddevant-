@@ -27,10 +27,7 @@ public class GameManager : MonoBehaviour
 
    private void Awake() 
     { 
-        if(tutoriel != null)
-        {
-            
-        }
+        
         if(Helper.isFade)
         {
             GO_Helper.Fading(false);
@@ -53,11 +50,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SpawnCommande());
         Commande.preparerCommande();
         Inventaire.createInventaire();
-    }
-
-    public void launchGame()
-    {
-
     }
 
     public void activePanel(bool couleur)
