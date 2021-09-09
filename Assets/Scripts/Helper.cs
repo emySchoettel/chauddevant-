@@ -535,6 +535,22 @@ public class Helper : MonoBehaviour
         }
     }
 
+    
+    public static bool verifyAchat(string nomAchat)
+    {
+        if(PlayerPrefs.HasKey(nomAchat))
+        {
+            if(PlayerPrefs.GetInt(nomAchat) == 1)
+                return true; 
+            else
+                return false; 
+        }
+        else
+        {
+            PlayerPrefs.SetInt(nomAchat, 0);
+        }
+        return false; 
+    }
     #endregion
 
     #region animation

@@ -56,6 +56,29 @@ tutoriel.jeu.pt5 = Ici c'est la zone de jeu pour se déplacer et pour tirer.
 [Achats]
 achats.bouton.skins = Apparences
 achats.bouton.competences = Compétences
+achats.competences.casserole.nom = Casserole
+achats.competences.casserole.description = Elle permet d'accroitre la vitesse de déplacement.
+achats.competences.casserole.prix = 50
+achats.competences.louche.nom = Louche
+achats.competences.louche.description = Elle permet d'obtenir plus de points en tirant.
+achats.competences.louche.prix = 100 
+achats.competences.rappe.nom = Rappe
+achats.competences.rappe.description = Elle permet d'obtenir un coeur en plus.
+achats.competences.rappe.prix = 150
+achats.competences.biere.nom = Biere
+achats.competences.biere.description = Elle permet de doubler les points en fin de partie.
+achats.competences.biere.prix = 500
+
+achats.skins.planche.nom = Planche a pain
+achats.skins.planche.description = Une planche a pain toute neuve !
+achats.skins.planche.prix = 150
+achats.skins.grille.nom = Grille pain 
+achats.skins.grille.description = Du pain fraichement grillé. 
+achats.skins.grille.prix = 200 
+achats.skins.bolo.nom = Casserole bolognaise
+achats.skins.bolo.description = Un plat de bolognaise bien mijoté. 
+achats.skins.bolo.prix = 300
+
 
 [Astuces du chef]
 astuce.beurre.description = Il y a deux differences entre l'huile et le beurre : le gout et la matière grasse ! Tout dépend du gout recherché pour votre plat. Plutot riche ou léger en calories ?
