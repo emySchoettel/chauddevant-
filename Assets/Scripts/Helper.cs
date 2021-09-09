@@ -180,6 +180,32 @@ public class Helper : MonoBehaviour
 
     #endregion
 
+
+    #region astuceduchef
+
+    public static bool verifyAstuce(string nomAstuce)
+    {
+        if (PlayerPrefs.HasKey(nomAstuce))
+        {
+            if(PlayerPrefs.GetInt(nomAstuce) == 1)
+            {
+                return true; 
+            }
+            else
+            {
+                return false; 
+            }
+    
+        }
+        else
+        {
+            PlayerPrefs.SetInt(nomAstuce, 0);
+        }
+        return false; 
+    }
+
+    #endregion
+
     #region directions items
     public static Vector3 randomPosition()
     {
