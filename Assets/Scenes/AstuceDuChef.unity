@@ -738,6 +738,7 @@ GameObject:
   - component: {fileID: 252390031}
   - component: {fileID: 252390030}
   - component: {fileID: 252390029}
+  - component: {fileID: 252390032}
   m_Layer: 5
   m_Name: Astuce_pizza
   m_TagString: Untagged
@@ -872,6 +873,25 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &252390032
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252390026}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fdd7fdc7da9430d46b31a3651c9f18eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &326366567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,6 +2130,7 @@ GameObject:
   - component: {fileID: 886695125}
   - component: {fileID: 886695124}
   - component: {fileID: 886695123}
+  - component: {fileID: 886695127}
   m_Layer: 5
   m_Name: Astuce_carbonara
   m_TagString: Untagged
@@ -2244,6 +2265,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 257.56573, y: 277.49924}
   m_EdgeRadius: 0
+--- !u!95 &886695127
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886695121}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a77a3a9190678b49aadfdd5620ff60c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &903680035
 GameObject:
   m_ObjectHideFlags: 0
@@ -3949,6 +3989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1451731167}
+  - component: {fileID: 1451731168}
   m_Layer: 5
   m_Name: Astuce_the
   m_TagString: Untagged
@@ -3970,13 +4011,32 @@ RectTransform:
   - {fileID: 1922639164}
   - {fileID: 326366568}
   m_Father: {fileID: 1924226708}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.69511956, y: 0.0941617}
   m_AnchorMax: {x: 1, y: 0.9401617}
   m_AnchoredPosition: {x: -16.83252, y: -5.0250244}
   m_SizeDelta: {x: 55.80191, y: 50.623993}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1451731168
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451731166}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 97a2eb9634f1a534fb5c15ce51fce1b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1467790391
 GameObject:
   m_ObjectHideFlags: 0
@@ -4105,6 +4165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1472666394}
+  - component: {fileID: 1472666395}
   m_Layer: 5
   m_Name: Astuce_sushis
   m_TagString: Untagged
@@ -4126,13 +4187,32 @@ RectTransform:
   - {fileID: 912442477}
   - {fileID: 451797495}
   m_Father: {fileID: 1924226708}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3567107, y: 0.047702603}
   m_AnchorMax: {x: 0.6737736, y: 0.9401617}
   m_AnchoredPosition: {x: -13.858887, y: 1.9760742}
   m_SizeDelta: {x: 46.244293, y: 36.621735}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1472666395
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472666393}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7f8e0fb45c865f4cb7a13671c7fbacd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1473777133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4920,6 +5000,7 @@ GameObject:
   - component: {fileID: 1731491396}
   - component: {fileID: 1731491395}
   - component: {fileID: 1731491394}
+  - component: {fileID: 1731491398}
   m_Layer: 5
   m_Name: Astuce_frites
   m_TagString: Untagged
@@ -5065,6 +5146,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 247.60498, y: 287.43512}
   m_EdgeRadius: 0
+--- !u!95 &1731491398
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731491392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8174ff2a876548e4bbd689bd6bc964a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1740795027
 GameObject:
   m_ObjectHideFlags: 0
@@ -5895,8 +5995,8 @@ RectTransform:
   m_Children:
   - {fileID: 751151387}
   - {fileID: 252390027}
-  - {fileID: 1451731167}
   - {fileID: 1472666394}
+  - {fileID: 1451731167}
   - {fileID: 1799093898}
   - {fileID: 1769025087}
   - {fileID: 1349031053}
