@@ -173,6 +173,52 @@ public class Achats_v2 : MonoBehaviour
         }
     }
 
+    private void getCompetencesStuff()
+    {
+        Competence actualCompetence; 
+        for (int i = 0; i < competences.Count; i++)
+        {   actualCompetence = competences[i];
+            actualCompetence.setIsPurchased();
+        }
+
+        for (int i = 0; i < 3; i++)
+        {
+            actualCompetence = competences[i];
+            if(actualCompetence.isPurchased)
+            {
+                actualCompetence.getSelf().transform.GetComponentInChildren<Button>().interactable = false; 
+            }
+            actualCompetence.self.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = actualCompetence.nom;
+            actualCompetence.self.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = actualCompetence.description;
+            actualCompetence.self.transform.GetChild(3).GetComponent<Image>().sprite = actualCompetence.image;
+            actualCompetence.self.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = actualCompetence.prix.ToString();
+
+        }
+    }
+
+    private void getSkinStuff()
+    {
+        Skin actualSkin; 
+        for (int i = 0; i < Skins.Count; i++)
+        {   actualSkin = Skins[i];
+            actualSkin.setIsPurchased();
+        }
+
+        for (int i = 0; i < 3; i++)
+        {
+            actualSkin = Skins[i];
+            if(actualSkin.isPurchased)
+            {
+                actualSkin.self.transform.GetComponentInChildren<Button>().interactable = false; 
+            }
+            actualSkin.self.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = actualSkin.nom;
+            actualSkin.self.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = actualSkin.description;
+            actualSkin.self.transform.GetChild(3).GetComponent<Image>().sprite = actualSkin.image;
+            actualSkin.self.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = actualSkin.prix.ToString();
+
+        }
+    }
+
     public void skinButtonClick()
     {
         nextButton.interactable = false; 
@@ -180,6 +226,7 @@ public class Achats_v2 : MonoBehaviour
         compBtn.interactable = true; 
         skinBtn.interactable = false; 
 
+        getSkinStuff();
 
     }
 
@@ -189,6 +236,8 @@ public class Achats_v2 : MonoBehaviour
         previousButton.interactable = false; 
         compBtn.interactable = false; 
         skinBtn.interactable = true; 
+
+        getCompetencesStuff();
     }
 
     public void nextButtonClick()
