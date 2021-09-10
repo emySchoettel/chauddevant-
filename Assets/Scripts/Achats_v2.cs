@@ -87,11 +87,12 @@ public class Achats_v2 : MonoBehaviour
     }
 
     [System.Serializable]
-    public class Skin
+    public class Skin : MonoBehaviour
     {
 
         public enum typeSkins 
         {
+            poele,
             planche,
             grille,
             bolo
@@ -132,6 +133,11 @@ public class Achats_v2 : MonoBehaviour
                     }
                 break; 
             }
+        }
+
+        public void changeTypeSkinEnum(typeSkins tS)
+        {
+            typeSkinsEnum = tS;
         }
     }
 

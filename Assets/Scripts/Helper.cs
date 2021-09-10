@@ -613,4 +613,34 @@ public class Helper : MonoBehaviour
     }
 
     #endregion
+
+    #region options
+
+    //verify if avatar is setup, if not just create one ; return 0 or 1 for tof
+    public static int getNumberAvatar()
+    {
+        if(PlayerPrefs.HasKey("avatar.skin"))
+        {
+            return PlayerPrefs.GetInt("avatar.skin");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("avatar.skin", 1);
+            return 1;
+        }
+    }
+
+    public static int verifyAvatar(string nomAvatar)
+    {
+        if(PlayerPrefs.HasKey(nomAvatar))
+        {
+            return PlayerPrefs.GetInt(nomAvatar);
+        }
+        else
+        {
+            return -1;
+        }
+    }
+    #endregion
+
 }
