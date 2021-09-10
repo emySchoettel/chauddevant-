@@ -150,8 +150,6 @@ public class Achats_v2 : MonoBehaviour
             argent_txt.GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetInt("argent").ToString(); 
         }
 
-        //TODO check if gold is enough 
-
         Competence actualCompetence; 
         //global
         for (int i = 0; i < competences.Count; i++)
@@ -353,7 +351,7 @@ public class Achats_v2 : MonoBehaviour
             }
             else//if not
             {
-                    actualCompetence.self.GetComponentInChildren<Button>().interactable = false; 
+                actualCompetence.self.GetComponentInChildren<Button>().interactable = false; 
             }
         }
             
