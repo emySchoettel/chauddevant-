@@ -153,17 +153,32 @@ public class Achats_v2 : MonoBehaviour
         //TODO check if gold is enough 
 
         Competence actualCompetence; 
+        //global
         for (int i = 0; i < competences.Count; i++)
         {   actualCompetence = competences[i];
             actualCompetence.setIsPurchased();
         }
 
+        //local
         for (int i = 0; i < 3; i++)
         {
             actualCompetence = competences[i];
+
             if(actualCompetence.isPurchased)
             {
                 actualCompetence.getSelf().transform.GetComponentInChildren<Button>().interactable = false; 
+            }
+            else //if not purchased
+            {
+                //if gold enough
+                if(Helper.verifyGoldForPurchase(actualCompetence.prix))
+                {
+                    actualCompetence.self.GetComponentInChildren<Button>().interactable = true; 
+                }
+                else//if not
+                {
+                     actualCompetence.self.GetComponentInChildren<Button>().interactable = false; 
+                }
             }
             actualCompetence.self.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = actualCompetence.nom;
             actualCompetence.self.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = actualCompetence.description;
@@ -184,9 +199,21 @@ public class Achats_v2 : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             actualCompetence = competences[i];
-            if(actualCompetence.isPurchased)
+           if(actualCompetence.isPurchased)
             {
                 actualCompetence.getSelf().transform.GetComponentInChildren<Button>().interactable = false; 
+            }
+            else //if not purchased
+            {
+                //if gold enough
+                if(Helper.verifyGoldForPurchase(actualCompetence.prix))
+                {
+                    actualCompetence.self.GetComponentInChildren<Button>().interactable = true; 
+                }
+                else//if not
+                {
+                     actualCompetence.self.GetComponentInChildren<Button>().interactable = false; 
+                }
             }
             actualCompetence.self.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = actualCompetence.nom;
             actualCompetence.self.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = actualCompetence.description;
@@ -209,7 +236,19 @@ public class Achats_v2 : MonoBehaviour
             actualSkin = Skins[i];
             if(actualSkin.isPurchased)
             {
-                actualSkin.self.transform.GetComponentInChildren<Button>().interactable = false; 
+                actualSkin.self.GetComponentInChildren<Button>().interactable = false; 
+            }
+            else //if not purchased
+            {
+                //if gold enough
+                if(Helper.verifyGoldForPurchase(actualSkin.prix))
+                {
+                    actualSkin.self.GetComponentInChildren<Button>().interactable = true; 
+                }
+                else//if not
+                {
+                     actualSkin.self.GetComponentInChildren<Button>().interactable = false; 
+                }
             }
             actualSkin.self.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = actualSkin.nom;
             actualSkin.self.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = actualSkin.description;
@@ -257,15 +296,22 @@ public class Achats_v2 : MonoBehaviour
         //prix
         current.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = competences[i].prix.ToString();
 
-        if(competences[i].isPurchased)
+       if(competences[i].isPurchased)
         {
-            current.transform.GetComponentInChildren<Button>().interactable = false;
+            competences[i].getSelf().transform.GetComponentInChildren<Button>().interactable = false; 
         }
-        else
+        else //if not purchased
         {
-            current.transform.GetComponentInChildren<Button>().interactable = true;
-            
-        } 
+            //if gold enough
+            if(Helper.verifyGoldForPurchase(competences[i].prix))
+            {
+                competences[i].self.GetComponentInChildren<Button>().interactable = true; 
+            }
+            else//if not
+            {
+                    competences[i].self.GetComponentInChildren<Button>().interactable = false; 
+            }
+        }
 
         competences[1].self.SetActive(false); 
         competences[2].self.SetActive(false); 
@@ -295,34 +341,30 @@ public class Achats_v2 : MonoBehaviour
 
             Competence actualCompetence = competences[i];
             if(actualCompetence.isPurchased)
+        {
+            actualCompetence.getSelf().transform.GetComponentInChildren<Button>().interactable = false; 
+        }
+        else //if not purchased
+        {
+            //if gold enough
+            if(Helper.verifyGoldForPurchase(actualCompetence.prix))
             {
-                actualCompetence.getSelf().transform.GetComponentInChildren<Button>().interactable = false; 
+                actualCompetence.self.GetComponentInChildren<Button>().interactable = true; 
             }
-            else
+            else//if not
             {
-                current.transform.GetComponentInChildren<Button>().interactable = true; 
+                    actualCompetence.self.GetComponentInChildren<Button>().interactable = false; 
             }
+        }
             
         }
 
-        if(!Helper.verifyAchat("achats.casserole") && Helper.getArgent() > competences[0].prix)
+        if(!Helper.verifyAchat("achats.comp.casserole") && Helper.getArgent() > competences[0].prix)
         {
             competences[0].self.transform.GetChild(5).GetComponent<Button>().interactable = true; 
         }
 
         previousButton.interactable = false; 
         nextButton.interactable = true; 
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -435,82 +435,82 @@ public class Helper : MonoBehaviour
 
 
     #region achats
-    public void acheter()
-    {
+    // public void acheter()
+    // {
         
-        List<Achat.Competence> competences = GameObject.FindObjectOfType<Achat>().getCompetences();
-        GameObject competenceGO = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.transform.parent.gameObject;;
+    //     List<Achat.Competence> competences = GameObject.FindObjectOfType<Achat>().getCompetences();
+    //     GameObject competenceGO = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.transform.parent.gameObject;;
 
-        //Verifier dans les playerPrefs que le produit n est pas deja achete
-        if(!PlayerPrefs.HasKey("casserole"))
-        {
-            if(argent >= competences[0].prix && competenceGO == competences[0].self && competences[0].typeBonus == Achat.Competence.type.casserole)
-            {
-                addCompetenceToplayer(1); 
-                competences[0].estAchete = true; 
-                PlayerPrefs.SetString("casserole", "true"); 
-                PlayerPrefs.Save(); 
-                competences[0].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
-                setArgent(competences[0].prix); 
+    //     //Verifier dans les playerPrefs que le produit n est pas deja achete
+    //     if(!PlayerPrefs.HasKey("casserole"))
+    //     {
+    //         if(argent >= competences[0].prix && competenceGO == competences[0].self && competences[0].typeBonus == Achat.Competence.type.casserole)
+    //         {
+    //             addCompetenceToplayer(1); 
+    //             competences[0].estAchete = true; 
+    //             PlayerPrefs.SetString("casserole", "true"); 
+    //             PlayerPrefs.Save(); 
+    //             competences[0].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
+    //             setArgent(competences[0].prix); 
                 
-            }
-            else
-            {
-                throw new System.Exception("Pas assez d'argent");
-            }
-        }
+    //         }
+    //         else
+    //         {
+    //             throw new System.Exception("Pas assez d'argent");
+    //         }
+    //     }
 
-        else if(!PlayerPrefs.HasKey("louche") && competences[1].typeBonus == Achat.Competence.type.louche)
-        {
-            if(argent >= competences[1].prix && competenceGO == competences[1].self)
-            {
-                addCompetenceToplayer(2); 
-                competences[1].estAchete = true; 
-                PlayerPrefs.SetString("louche", "true"); 
-                PlayerPrefs.Save(); 
-                competences[1].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
-                setArgent(competences[1].prix);
-            }
-            else    
-            {
-                throw new System.Exception("Pas assez d'argent");
-            }
-        }
-        else if(!PlayerPrefs.HasKey("rappe"))
-        {
-            if(argent >= competences[2].prix && competenceGO == competences[2].self && competences[2].typeBonus == Achat.Competence.type.rappe)
-            {             
-                addCompetenceToplayer(3); 
-                competences[2].estAchete = true; 
-                PlayerPrefs.SetInt("multiplesTirsBool", 1);
-                PlayerPrefs.SetString("rappe", "true"); 
-                PlayerPrefs.Save(); 
-                competences[2].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
-                setArgent(competences[2].prix);
-            }
-            else
-            {
-                throw new System.Exception("Pas assez d'argent");
-            }
-        }
-        // else if(!PlayerPrefs.HasKey("biere"))
-        // {
-        //     Debug.Log(competences[3].typeBonus == Achat.Competence.type.biere);
-        //     if(argent >= competences[3].prix && competenceGO == competences[3].self && competences[3].typeBonus == Achat.Competence.type.biere)
-        //     {
-        //         addCompetenceToplayer(4); 
-        //         PlayerPrefs.SetString("biere", "true"); 
-        //         PlayerPrefs.Save(); 
-        //         competences[3].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
-        //         setArgent(competences[3].prix);
-        //     }
-        //     else
-        //     {
-        //         throw new System.Exception("Pas assez d'argent");
-        //     }
-        // }
-        GameObject.FindObjectOfType<Achat>().argent_txt.GetComponent<TextMeshProUGUI>().text = argent.ToString();
-    }
+    //     else if(!PlayerPrefs.HasKey("louche") && competences[1].typeBonus == Achat.Competence.type.louche)
+    //     {
+    //         if(argent >= competences[1].prix && competenceGO == competences[1].self)
+    //         {
+    //             addCompetenceToplayer(2); 
+    //             competences[1].estAchete = true; 
+    //             PlayerPrefs.SetString("louche", "true"); 
+    //             PlayerPrefs.Save(); 
+    //             competences[1].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
+    //             setArgent(competences[1].prix);
+    //         }
+    //         else    
+    //         {
+    //             throw new System.Exception("Pas assez d'argent");
+    //         }
+    //     }
+    //     else if(!PlayerPrefs.HasKey("rappe"))
+    //     {
+    //         if(argent >= competences[2].prix && competenceGO == competences[2].self && competences[2].typeBonus == Achat.Competence.type.rappe)
+    //         {             
+    //             addCompetenceToplayer(3); 
+    //             competences[2].estAchete = true; 
+    //             PlayerPrefs.SetInt("multiplesTirsBool", 1);
+    //             PlayerPrefs.SetString("rappe", "true"); 
+    //             PlayerPrefs.Save(); 
+    //             competences[2].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
+    //             setArgent(competences[2].prix);
+    //         }
+    //         else
+    //         {
+    //             throw new System.Exception("Pas assez d'argent");
+    //         }
+    //     }
+    //     // else if(!PlayerPrefs.HasKey("biere"))
+    //     // {
+    //     //     Debug.Log(competences[3].typeBonus == Achat.Competence.type.biere);
+    //     //     if(argent >= competences[3].prix && competenceGO == competences[3].self && competences[3].typeBonus == Achat.Competence.type.biere)
+    //     //     {
+    //     //         addCompetenceToplayer(4); 
+    //     //         PlayerPrefs.SetString("biere", "true"); 
+    //     //         PlayerPrefs.Save(); 
+    //     //         competences[3].self.transform.GetChild(5).GetComponent<Button>().interactable = false;
+    //     //         setArgent(competences[3].prix);
+    //     //     }
+    //     //     else
+    //     //     {
+    //     //         throw new System.Exception("Pas assez d'argent");
+    //     //     }
+    //     // }
+    //     GameObject.FindObjectOfType<Achat>().argent_txt.GetComponent<TextMeshProUGUI>().text = argent.ToString();
+    // }
 
     public static void addCompetenceToplayer(int numCompetence)
     {
@@ -550,6 +550,20 @@ public class Helper : MonoBehaviour
             PlayerPrefs.SetInt(nomAchat, 0);
         }
         return false; 
+    }
+
+    public static bool verifyGoldForPurchase(int prix)
+    {
+        if(getArgent() >= prix)
+        {
+            return true; 
+        }
+        else
+        {
+            return false;    
+        }
+        
+
     }
     #endregion
 
