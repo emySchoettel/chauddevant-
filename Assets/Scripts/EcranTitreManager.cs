@@ -59,6 +59,35 @@ public class EcranTitreManager : MonoBehaviour
     {
         TextMeshProUGUI textMS = ms_canvas.transform.GetChild(1).transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         textMS.text = Helper.getMeilleurScore().ToString(); 
+
+        int astuceduchef = getScoreAstuce();
+        TextMeshProUGUI txt_astuce = ms_canvas.transform.GetChild(2).transform.GetChild(1).GetComponentInChildren<TextMeshProUGUI>();
+        txt_astuce.text = astuceduchef.ToString() + "/6";
+        
+    }
+
+    private int getScoreAstuce()
+    {
+        int res = 0; 
+        if(Helper.verifyAstuce("astuce.beurre"))
+            res++; 
+
+        if(Helper.verifyAstuce("astuce.frites"))
+            res++;
+
+        if(Helper.verifyAstuce("astuce.carbonara"))
+            res++; 
+
+        if(Helper.verifyAstuce("astuce.pizza"))
+            res++; 
+        
+        if(Helper.verifyAstuce("astuce.sushis"))
+            res++; 
+
+        if(Helper.verifyAstuce("astuce.the_anglais"))
+            res++; 
+
+        return res; 
     }
 
     public void afficherTuto()
@@ -74,3 +103,4 @@ public class EcranTitreManager : MonoBehaviour
         }
     }
 }
+
