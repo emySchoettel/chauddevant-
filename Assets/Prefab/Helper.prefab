@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1833090286288813204}
   - component: {fileID: 8853529484832277364}
+  - component: {fileID: 5903431497750232766}
   m_Layer: 0
   m_Name: Helper
   m_TagString: Untagged
@@ -44,7 +45,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
+  tutoriel: {fileID: 0}
+  ms_canvas: {fileID: 0}
+  tutopage1: {fileID: 0}
+  tutopage2: {fileID: 0}
+  modetutobtn: {fileID: 0}
+  btnprectuto: {fileID: 0}
+  btnsuivtuto: {fileID: 0}
   tab_nourriture:
   - {fileID: 3105979536485455639, guid: 1bd42d4c0800de14bb20376071b81669, type: 3}
   - {fileID: 6634869441823621584, guid: 44718d21e3bdfc549aa03b58d7b2a340, type: 3}
   - {fileID: 3173054986680400117, guid: ff7341e3296d3514f93ff9b3774912be, type: 3}
+--- !u!114 &5903431497750232766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867413581388425566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d1c63036de7d34f9275f49c4ebb5a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}

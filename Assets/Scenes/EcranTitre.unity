@@ -891,7 +891,7 @@ RectTransform:
   - {fileID: 531720076}
   - {fileID: 1258701155}
   m_Father: {fileID: 160654866}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.90387505}
   m_AnchorMax: {x: 0.30225003, y: 1}
@@ -971,9 +971,9 @@ RectTransform:
   - {fileID: 1835300704}
   - {fileID: 1879739032}
   - {fileID: 1768481553}
-  - {fileID: 1477972046}
   - {fileID: 327359187}
   - {fileID: 156565153}
+  - {fileID: 1477972046}
   - {fileID: 1932445850}
   - {fileID: 770556507}
   m_Father: {fileID: 0}
@@ -1914,7 +1914,7 @@ RectTransform:
   - {fileID: 1497505435}
   - {fileID: 1248683554}
   m_Father: {fileID: 160654866}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8831,7 +8831,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 160654866}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9188,6 +9188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1500531810}
   - component: {fileID: 1500531809}
+  - component: {fileID: 1500531811}
   m_Layer: 0
   m_Name: Helper
   m_TagString: Untagged
@@ -9230,6 +9231,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1500531811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500531808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d1c63036de7d34f9275f49c4ebb5a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1799150605}
 --- !u!1 &1550795519
 GameObject:
   m_ObjectHideFlags: 0

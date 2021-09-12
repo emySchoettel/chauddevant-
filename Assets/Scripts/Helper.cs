@@ -641,6 +641,19 @@ public class Helper : MonoBehaviour
             return -1;
         }
     }
+
+    public static int verifyVolumeMusic()
+    {
+        if(PlayerPrefs.HasKey("options.musique.volume"))
+        {
+            return PlayerPrefs.GetInt("options.musique.volume");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("options.musique.volume", 20);
+            return -1;
+        }
+    }
     #endregion
 
 }
