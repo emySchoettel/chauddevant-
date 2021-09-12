@@ -624,8 +624,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.90387505}
   m_AnchorMax: {x: 0.30225003, y: 1}
-  m_AnchoredPosition: {x: 54, y: 3.99}
-  m_SizeDelta: {x: 116.41699, y: 11.139404}
+  m_AnchoredPosition: {x: 54, y: -1}
+  m_SizeDelta: {x: 116.41699, y: 1.1594238}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156565154
 MonoBehaviour:
@@ -5910,12 +5910,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lesastucesDuChef:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  astuceGO: []
-  astuceGOHide: []
-  descriptionGO: {fileID: 0}
+  - nom: 
+    icon: {fileID: 0}
+    description: 
+  - nom: 
+    icon: {fileID: 0}
+    description: 
+  - nom: 
+    icon: {fileID: 0}
+    description: 
+  astucesActuelles: []
 --- !u!4 &1529833238
 Transform:
   m_ObjectHideFlags: 0
@@ -7206,7 +7210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1768481553
 RectTransform:
   m_ObjectHideFlags: 0
