@@ -139,9 +139,22 @@ public class Achats_v2 : MonoBehaviour
         {
             typeSkinsEnum = tS;
         }
+
+        public void setParams(string nom, string description, int prix, Sprite image, bool isPurchased, GameObject self)
+        {
+            this.nom = nom;
+            this.description = description; 
+            this.prix = prix; 
+            this.image = image; 
+            this.isPurchased = isPurchased;
+            this.self = self; 
+        }
     }
 
     [SerializeField]
+    private List<GameObject> SkinsGO; 
+
+      [SerializeField]
     private List<Skin> Skins; 
 
     [SerializeField]
@@ -151,6 +164,10 @@ public class Achats_v2 : MonoBehaviour
     {
         skinBtn.GetComponentInChildren<TextMeshProUGUI>().text = Translation.Get("achats.bouton.skins");
         compBtn.GetComponentInChildren<TextMeshProUGUI>().text = Translation.Get("achats.bouton.competences");
+
+        createSkins();
+
+
         if(PlayerPrefs.GetInt("argent") != 0)
         {
             argent_txt.GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetInt("argent").ToString(); 
@@ -225,11 +242,19 @@ public class Achats_v2 : MonoBehaviour
             actualCompetence.self.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = actualCompetence.prix.ToString();
 
         }
+
+            competences[0].self.SetActive(true);
+            competences[1].self.SetActive(true);
+            competences[2].self.SetActive(true);
+            Skins[0].self.SetActive(false);
+            Skins[1].self.SetActive(false);
+            Skins[2].self.SetActive(false);
     }
 
     private void getSkinStuff()
     {
         Skin actualSkin; 
+
         for (int i = 0; i < Skins.Count; i++)
         {   actualSkin = Skins[i];
             actualSkin.setIsPurchased();
@@ -260,6 +285,45 @@ public class Achats_v2 : MonoBehaviour
             actualSkin.self.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = actualSkin.prix.ToString();
 
         }
+
+            //set active all
+            competences[0].self.SetActive(false);
+            competences[1].self.SetActive(false);
+            competences[2].self.SetActive(false);
+            Skins[0].self.SetActive(true);
+            Skins[1].self.SetActive(true);
+            Skins[2].self.SetActive(true);
+    }
+
+    public bool createSkins()
+    {
+        Skin theskin = SkinsGO[0].AddComponent<Skin>();
+        string nom = Translation.Get("achats.skins.planche.nom");
+        string description = Translation.Get("achats.skins.planche.description");
+        int prix = int.Parse(Translation.Get("achats.skins.planche.prix"));
+        Sprite image = SkinsGO[0].transform.GetChild(3).GetComponent<Image>().sprite;
+        theskin.setParams(nom, description, prix, image, false, SkinsGO[0]);
+
+        theskin = SkinsGO[1].AddComponent<Skin>();
+        nom = Translation.Get("achats.skins.grille.nom");
+        description = Translation.Get("achats.skins.grille.description");
+        prix = int.Parse(Translation.Get("achats.skins.grille.prix"));
+        image = SkinsGO[1].transform.GetChild(3).GetComponent<Image>().sprite;
+        theskin.setParams(nom, description, prix, image, false, SkinsGO[1]);
+
+        theskin = SkinsGO[2].AddComponent<Skin>();
+        nom = Translation.Get("achats.skins.bolo.nom");
+        description = Translation.Get("achats.skins.bolo.description");
+        prix = int.Parse(Translation.Get("achats.skins.bolo.prix"));
+        image = SkinsGO[2].transform.GetChild(3).GetComponent<Image>().sprite;
+        theskin.setParams(nom, description, prix, image, false, SkinsGO[2]);
+
+        for (int i = 0; i < SkinsGO.Count; i++)
+        {
+            Skins[i] = SkinsGO[i].GetComponent<Skin>();
+        }
+
+        return true; 
     }
 
     public void skinButtonClick()
