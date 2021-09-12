@@ -135,7 +135,6 @@ public class AstuceManager : MonoBehaviour
             
             if(Helper.verifyAstuce("astuce.the_anglais"))
             {
-                
                 //create astuce
                 actualGO = astuceGO[5];
                 Astuce astuce = actualGO.AddComponent(typeof(Astuce)) as Astuce;

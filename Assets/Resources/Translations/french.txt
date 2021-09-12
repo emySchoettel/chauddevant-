@@ -82,9 +82,9 @@ achats.skins.bolo.prix = 300
 
 
 [Astuces du chef]
-astuce.beurre.description = Il y a deux differences entre l'huile et le beurre : le gout et la matière grasse ! Tout dépend du gout recherché pour votre plat. Plutot riche ou léger en calories ?
+astuce.beurre.description = Il y a deux differences entre l'huile et le beurre : le gout et la matiere grasse ! Tout dépend du gout recherché pour votre plat. Plutot riche ou léger en calories ?
 astuce.frites.description = Les frites sont nées, selon des sources, dans les années 1670 bien que cette période reste tres controversée. Le peuple belge et francais se disputent depuis toujours leur création !
 astuce.carbonara.description = Contre toute attente, la véritable recette n'est pas faite de creme ! Un peu chere pour l'époque, elle se compose uniquement d'oeuf et de fromage rapé (divers) !
-astuce.pizza.description = Pour une pate savoureuse et bien gonflée sans temps de cuisson annexe, il est conseillé d'opter pour de la levure boulangère fraiche !
+astuce.pizza.description = Pour une pate savoureuse et bien gonflée sans temps de cuisson annexe, il est conseillé d'opter pour de la levure boulangere fraiche !
 astuce.sushis.description = Le sushi existe depuis le Ve siecle avant J-C qui vient du Japon ! Il existe en nombreuses variantes pour le peuple japonais mais a aussi été exporté sous différentes saveurs pour l'Occident.
-astuce.the_anglais.description = Il existe plusieurs regles d'or pour préparer son the a la perfection : ne jamais ébouillanter la théièere, verser de l'eau frémissante et jamais bouilante ! Laisser infuser trois a cinq minutes, ne pas oublier de remuer et servir !
+astuce.the_anglais.description = Il existe plusieurs regles d'or pour préparer son thé a la perfection : ne jamais ébouillanter la théiere, verser de l'eau frémissante et jamais bouilante ! Laisser infuser trois a cinq minutes, ne pas oublier de remuer et servir !
