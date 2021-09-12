@@ -32,9 +32,10 @@ meilleurscore.titre = Meilleur Score :
 [Credits]
 credits.equipe.titre = Équipe :
 credits.equipe.equipe = Développement : Schoettel Emy 
-credits.musique.titre = Musiques : 
-credits.musique.bgm.ecrantitre = Titre:  Dolling<br>Auteur: Cybersdf<br>Source: https://soundcloud.com/cybersdf
-credits.musique.bgm.jeu = Titre:  Chill Trap<br>Auteur: Aries Beats<br>Source: https://www.youtube.com/aries4rce
+credits.musique.titre = Graphismes et musiques : 
+credits.musique.bgm.ecrantitre = Titre :  Dolling<br>Auteur: Cybersdf<br>Source: https://soundcloud.com/cybersdf
+credits.musique.bgm.jeu = Titre :  Chill Trap<br>Auteur: Aries Beats<br>Source: https://www.youtube.com/aries4rce
+credits.assets = https://ghostpixxells.itch.io/pixelfood <br> VectorPixelStar : https://vectorpixelstar.itch.io/food
 
 [Tutoriel] 
 tutoriel.commandes.titre = Commandes :
