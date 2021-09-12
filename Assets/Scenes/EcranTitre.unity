@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 29103788}
   - component: {fileID: 29103787}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: text_astuces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,7 +177,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/10
+  m_text: '0/9
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1344,8 +1346,8 @@ RectTransform:
   m_Children:
   - {fileID: 1279736601}
   - {fileID: 2125701890}
-  - {fileID: 1248683554}
   - {fileID: 1497505435}
+  - {fileID: 1248683554}
   m_Father: {fileID: 160654866}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4618,7 +4620,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 327359187}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.84700006, y: 0.88400006}
   m_AnchorMax: {x: 0.96500003, y: 0.9694062}
@@ -5821,7 +5823,7 @@ RectTransform:
   - {fileID: 2035342119}
   - {fileID: 29103786}
   m_Father: {fileID: 327359187}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.6797474}
   m_AnchorMax: {x: 0.84700006, y: 0.7481398}
@@ -5879,56 +5881,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1529833236
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1529833238}
-  - component: {fileID: 1529833237}
-  m_Layer: 0
-  m_Name: AstuceManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1529833237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529833236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9583969c6bef91641ba7f7177db46758, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lesastucesDuChef:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  astuceGO: []
-  astuceGOHide: []
-  descriptionGO: {fileID: 0}
---- !u!4 &1529833238
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529833236}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 138.83186, y: 193.14967, z: -98.656494}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1550795519
 GameObject:
