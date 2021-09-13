@@ -6,9 +6,6 @@ using TMPro;
 
 public class Achats_v2 : MonoBehaviour
 {
-
-    // [SerializeField]
-    // private List<Article> Competences;
     [SerializeField]
     private Button skinBtn; 
 

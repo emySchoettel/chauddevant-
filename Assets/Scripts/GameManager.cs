@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour
     {
         //stop everything 
         Commande.commandeActuelle = 5;
-        //joueurActuel.setMove(false); 
+
         itemController.setEndGame(true);
 
         Sc_Fin.setTitre("Vous avez perdu");
@@ -179,14 +179,12 @@ public class GameManager : MonoBehaviour
             if(Commande.commande[Commande.commandeActuelle].GetComponent<NourritureItem>().type == nourritureItem.type)
             {
                 Inventaire.addItemInventaire(gameObject.GetComponent<NourritureItem>());
-                Helper.addPoints(20, false);
+                Helper.addPoints(15, false);
                 Commande.commandeActuelle++; 
-                activePanel(false);
             }
             else
-            {
-                activePanel(true);
-                dechetToPlayer();
+            {                
+                Helper.addPoints(10, false);
             }
         }
     }

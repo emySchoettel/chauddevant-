@@ -27,7 +27,23 @@ public class Helper : MonoBehaviour
     {
         bacon,
         pain,
-        oeuf
+        oeuf,
+        baguette,
+        bun, 
+        burger,
+        burrito,
+        cheesecake,
+        confiture,
+        glace,
+        hotdog,
+        nachos, 
+        omlet, 
+        pie,
+        pizza,
+        ramen,
+        sandwich,
+        sushi,
+        taco
     }
 
     public enum item
@@ -652,6 +668,19 @@ public class Helper : MonoBehaviour
         {
             PlayerPrefs.SetInt("options.musique.volume", 20);
             return -1;
+        }
+    }
+
+    public static string verifyModeJeu()
+    {
+        if(PlayerPrefs.HasKey("option_mode_jeu"))
+        {
+            return PlayerPrefs.GetString("option_mode_jeu");
+        }
+        else
+        {
+            PlayerPrefs.SetString("option_mode_jeu", OptionsManager.modejeu.mouvements.ToString());
+            return "null";
         }
     }
     #endregion

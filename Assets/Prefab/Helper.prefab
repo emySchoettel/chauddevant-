@@ -54,8 +54,24 @@ MonoBehaviour:
   btnsuivtuto: {fileID: 0}
   tab_nourriture:
   - {fileID: 3105979536485455639, guid: 1bd42d4c0800de14bb20376071b81669, type: 3}
+  - {fileID: 4403461539704132406, guid: 43ad44040d28143469ad89bd63dfdc86, type: 3}
+  - {fileID: 4312372767758421804, guid: f1818df6c9e863f48abb9ad22da3e69f, type: 3}
+  - {fileID: 8350056721137788755, guid: 9be90e67d02c27d44934dbcd0b346113, type: 3}
+  - {fileID: 7919424687436779123, guid: 8c9f304e2c9ad3749bfb6bbef0d48735, type: 3}
+  - {fileID: 7591104467349884269, guid: 3dc5acbdf8157f14886816e03bab36e8, type: 3}
   - {fileID: 6634869441823621584, guid: 44718d21e3bdfc549aa03b58d7b2a340, type: 3}
   - {fileID: 3173054986680400117, guid: ff7341e3296d3514f93ff9b3774912be, type: 3}
+  - {fileID: 1040266764014428076, guid: 9d0aca0fa7b07314e9f72b6e6b06d2d6, type: 3}
+  - {fileID: 1381516560745490916, guid: afdff6da32f761645880dae2dcb3699d, type: 3}
+  - {fileID: 2386336694273112365, guid: dbbd4dc4c0000614c91337019d5e4202, type: 3}
+  - {fileID: 8332815076085583919, guid: e22bde91df77d2a4ca42e6dd9568c907, type: 3}
+  - {fileID: 3068454107842669708, guid: 802ae7ec1bebe7541987b8d152deddef, type: 3}
+  - {fileID: 3956030147242313578, guid: 72827c175e7a9aa4a96a8b0de59d82ab, type: 3}
+  - {fileID: 2325415622534075322, guid: 49b510df228fdcb4e92fb38c602efd9d, type: 3}
+  - {fileID: 5135573255766711331, guid: b8d389aba6d7e27439a87994e5e1e0f6, type: 3}
+  - {fileID: 1674847662267646719, guid: 59ebff59697356e4e97da2ece4a6b728, type: 3}
+  - {fileID: 787703916809720347, guid: b7c7f7943bbe4a84fb7601f2ce7496e8, type: 3}
+  - {fileID: 6290275839109430366, guid: b12bc6f91b9e95f438d2a7a53429a058, type: 3}
 --- !u!114 &5903431497750232766
 MonoBehaviour:
   m_ObjectHideFlags: 0

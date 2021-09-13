@@ -35,7 +35,7 @@ public class Projectile : MonoBehaviour
         if(other.transform.CompareTag("Dechet"))
         {
             Destroy(other.gameObject);
-            Helper.addPoints(15, true, Helper.item.dechet);
+            Helper.addPoints(10, true, Helper.item.dechet);
             move = false; 
         }
         else if(other.transform.CompareTag("Nourriture"))

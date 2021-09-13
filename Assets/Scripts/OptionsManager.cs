@@ -91,21 +91,36 @@ public class OptionsManager : MonoBehaviour
         //vérifier les achats des 3 skins 
         if(Helper.verifyAchat("achats.skin.planche"))
         {
-            parents[2].SetActive(true);
+            parents[1].SetActive(true);
+            parents[1].GetComponentInChildren<TextMeshProUGUI>().enabled = false; 
         }
         if(Helper.verifyAchat("achats.skin.grille"))
         {
-            parents[3].SetActive(true);
+            parents[2].SetActive(true);
+            parents[2].GetComponentInChildren<TextMeshProUGUI>().enabled = false; 
         }
         if(Helper.verifyAchat("achats.skin.bolo"))
         {
-            parents[4].SetActive(true);
+            parents[3].SetActive(true);
+            parents[3].GetComponentInChildren<TextMeshProUGUI>().enabled = false; 
         }
+        switch(Helper.getNumberAvatar())
+        {
+            case 1:
+                parents[0].GetComponentInChildren<TextMeshProUGUI>().enabled = true; 
+            break; 
+            case 2:
+                parents[1].GetComponentInChildren<TextMeshProUGUI>().enabled = true; 
+            break; 
+            case 3: 
+                parents[2].GetComponentInChildren<TextMeshProUGUI>().enabled = true; 
+            break; 
+            case 4: 
+                parents[3].GetComponentInChildren<TextMeshProUGUI>().enabled = true; 
+            break;
+        }    
 
-
-        
-        getAvatar(Helper.getNumberAvatar());
-      
+       
     }
     public void saveOptions()
     {
@@ -153,7 +168,7 @@ public class OptionsManager : MonoBehaviour
                 case Achats_v2.Skin.typeSkins.planche:
                     if(Helper.verifyAvatar("avatar.skin") != 2)
                     {
-                        PlayerPrefs.SetInt("avatar.skin.", 2);
+                        PlayerPrefs.SetInt("avatar.skin", 2);
                         getAvatar(2);
                     }
                 break; 
@@ -177,12 +192,27 @@ public class OptionsManager : MonoBehaviour
         }   
     }
 
+    private void getPrefModeJeu()
+    {
+         switch(Helper.verifyModeJeu())
+        {
+            case "boutons":
+                tapButton.Select();
+            break; 
+
+            case "mouvements":
+                movementButton.Select(); 
+            break; 
+        }
+    }
+
     private void getAvatar(int avatarNumber)
     {
         switch(avatarNumber)
         {
             case 1:
                 parent.transform.GetChild(1).GetChild(1).gameObject.SetActive(true);
+                parent.transform.GetChild(1).GetComponentInChildren<TextMeshProUGUI>().enabled = true;
                 parent.transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
                 parent.transform.GetChild(3).GetChild(1).gameObject.SetActive(false);
                 parent.transform.GetChild(4).GetChild(1).gameObject.SetActive(false);
@@ -190,6 +220,7 @@ public class OptionsManager : MonoBehaviour
             
             case 2:
                 parent.transform.GetChild(2).GetChild(1).gameObject.SetActive(true);
+                parent.transform.GetChild(2).GetComponentInChildren<TextMeshProUGUI>().enabled = true;
                 parent.transform.GetChild(3).GetChild(1).gameObject.SetActive(false);
                 parent.transform.GetChild(4).GetChild(1).gameObject.SetActive(false);
                 parent.transform.GetChild(1).GetChild(1).gameObject.SetActive(false);
@@ -197,6 +228,7 @@ public class OptionsManager : MonoBehaviour
 
             case 3:
                 parent.transform.GetChild(3).GetChild(1).gameObject.SetActive(true);
+                parent.transform.GetChild(3).GetComponentInChildren<TextMeshProUGUI>().enabled = true;
                 parent.transform.GetChild(1).GetChild(1).gameObject.SetActive(false);
                 parent.transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
                 parent.transform.GetChild(4).GetChild(1).gameObject.SetActive(false);
@@ -204,6 +236,7 @@ public class OptionsManager : MonoBehaviour
 
             case 4:
                 parent.transform.GetChild(4).GetChild(1).gameObject.SetActive(true);
+                parent.transform.GetChild(4).GetComponentInChildren<TextMeshProUGUI>().enabled = true;
                 parent.transform.GetChild(1).GetChild(1).gameObject.SetActive(false);
                 parent.transform.GetChild(2).GetChild(1).gameObject.SetActive(false);
                 parent.transform.GetChild(3).GetChild(1).gameObject.SetActive(false);
@@ -223,6 +256,10 @@ public class OptionsManager : MonoBehaviour
 
         nextButton.interactable = true; 
         previousButton.interactable = false;
+
+        getAvatar(PlayerPrefs.GetInt("avatar.skin"));
+        getPrefModeJeu();
+
     }
 
     public void nextClick()

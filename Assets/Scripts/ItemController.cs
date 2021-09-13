@@ -31,6 +31,7 @@ public class ItemController : MonoBehaviour
 
     void StartNourriture()
     {
+        Debug.Log(Helper.pointActuel);
         if(!endgame)
         {
             int randomTime = UnityEngine.Random.Range(0,2);
