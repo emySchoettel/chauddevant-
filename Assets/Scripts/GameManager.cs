@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SpawnCommande());
         Commande.preparerCommande();
         Inventaire.createInventaire();
-        // GetComponent<Timer>().enabled = true; 
+        GetComponent<Timer>().enabled = true; 
     }
 
     public void activePanel(bool couleur)
