@@ -3196,6 +3196,7 @@ GameObject:
   - component: {fileID: 1312311598}
   - component: {fileID: 1312311600}
   - component: {fileID: 1312311601}
+  - component: {fileID: 1312311602}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3331,6 +3332,19 @@ MonoBehaviour:
   IgnoreStartedOverGui: 1
   IgnoreIsOverGui: 0
   RequiredSelectable: {fileID: 0}
+--- !u!114 &1312311602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312311597}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e41c93f66465de47afcd2b0971efd5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLeft: 5
 --- !u!1 &1466317834
 GameObject:
   m_ObjectHideFlags: 0
@@ -4590,6 +4604,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5903431497750232766, guid: 51e9db1fc1567bf428dad0fb991ca3ec,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1117054733}
     - target: {fileID: 8853529484832277364, guid: 51e9db1fc1567bf428dad0fb991ca3ec,
         type: 3}
       propertyPath: panel

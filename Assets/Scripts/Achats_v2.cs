@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.WSA;
 using UnityEngine.UI;
 using TMPro; 
 
@@ -206,6 +207,77 @@ public class Achats_v2 : MonoBehaviour
         }
     }
 
+    public void purchaseItem()
+    {
+        GameObject objectClicked = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
+        GameObject parentClicked = objectClicked.transform.parent.gameObject;
+
+        //Toast.Create();
+
+        //if is a skin 
+        if(parentClicked.GetComponent<Skin>() != null)
+        {
+            Skin theSkinOfParent = parentClicked.GetComponent<Skin>();
+            switch(theSkinOfParent.typeSkinsEnum)
+            {
+                case Skin.typeSkins.planche:
+                    PlayerPrefs.SetInt("achats.skin.planche", 1);
+                    
+                break;
+
+                case Skin.typeSkins.grille:
+                    PlayerPrefs.SetInt("achats.skin.planche", 1);
+                break; 
+
+                case Skin.typeSkins.bolo:
+                    PlayerPrefs.SetInt("achats.skin.planche", 1);
+                break;
+            }
+            objectClicked.GetComponent<Button>().interactable = false;
+            theSkinOfParent.setIsPurchased();
+            Helper.setArgent(theSkinOfParent.prix);
+        }
+        //if is a comp
+        else
+        {
+            if(parentClicked == competences[0].self && parentClicked.transform.GetComponentInChildren<TextMeshProUGUI>().text == "Casserole") //comp casserole
+            {
+                PlayerPrefs.SetInt("achats.comp.casserole", 1);
+                competences[0].setIsPurchased();
+                objectClicked.GetComponent<Button>().interactable = false;
+                Helper.setArgent(competences[0].prix);
+            }
+            else if(parentClicked == competences[1].self) //comp louche 
+            {   
+                PlayerPrefs.SetInt("achats.comp.louche", 1);
+                competences[1].setIsPurchased();
+                Helper.setArgent(competences[1].prix);
+                objectClicked.GetComponent<Button>().interactable = false;
+            }
+            else if(parentClicked == competences[2].self) //comp rappe 
+            {
+                PlayerPrefs.SetInt("achats.comp.rappe", 1);
+                competences[2].setIsPurchased();
+                Helper.setArgent(competences[2].prix);
+                objectClicked.GetComponent<Button>().interactable = false;
+            }
+            else if(parentClicked == competences[3].self && parentClicked.transform.GetComponentInChildren<TextMeshProUGUI>().text == "Biere")  //comp biere
+            {
+                PlayerPrefs.SetInt("achats.comp.biere", 1);
+                competences[3].setIsPurchased();
+                Helper.setArgent(competences[3].prix);
+                objectClicked.GetComponent<Button>().interactable = false;
+            }
+            
+        }
+        PlayerPrefs.Save();
+        updateMoney();
+    }
+
+    private void updateMoney()
+    {
+        argent_txt.text = Helper.getArgent().ToString();
+    }
     private void getCompetencesStuff()
     {
         Competence actualCompetence; 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5899089804517159665}
   - component: {fileID: 5899089804517159666}
   m_Layer: 5
-  m_Name: Argent
+  m_Name: Argent_sprite_canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,10 +33,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.13271278, y: 0.293}
-  m_AnchorMax: {x: 0.43871275, y: 0.7454533}
-  m_AnchoredPosition: {x: -42.600006, y: 0.00008773804}
-  m_SizeDelta: {x: -14.486069, y: 30.000008}
+  m_AnchorMin: {x: 0.041, y: 0.33}
+  m_AnchorMax: {x: 0.65980273, y: 0.703}
+  m_AnchoredPosition: {x: 1.8499908, y: 1.5000916}
+  m_SizeDelta: {x: 67.37236, y: 77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5899089804517159664
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6088342627132289551, guid: f27a06b0dd2efcd468401f83aa069ce4,
+  m_Sprite: {fileID: 2856731783151212161, guid: 33df2ef48c18bbe49aa6b81d76a10eff,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

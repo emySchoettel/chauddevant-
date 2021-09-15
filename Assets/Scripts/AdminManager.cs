@@ -62,12 +62,71 @@ public class AdminManager : MonoBehaviour
 
     private string[] astucesNames = { "astuce.beurre", "astuce.frites", "astuce.carbonara","astuce.pizza", "astuce.sushis", "astuce.the_anglais"};
 
+    private void Start() 
+    {
+        inputField.text = Helper.getArgent().ToString(); 
+
+        int value = verifyAll("skins");
+        sliderApparence.value = value; 
+        valueApparence.text = value.ToString();
+
+        value = verifyAll("astuces");
+        sliderAstuces.value = value; 
+        valueAstuces.text = value.ToString(); 
+
+        value = verifyAll("comp"); 
+        sliderCompetences.value = value; 
+        valueCompetences.text = value.ToString();
+    }
+
+    public int verifyAll(string choix)
+    {
+        int res = 0;
+        if(choix == "skins")
+        {
+            if(Helper.verifyAchat("achats.skin.planche"))
+            res++; 
+            if(Helper.verifyAchat("achats.skin.bolo"))
+                res++; 
+            if(Helper.verifyAchat("achats.skin.grille"))
+                res++;
+        }
+        if(choix == "astuces")
+        {
+            if(Helper.verifyAstuce("astuce.beurre"))
+                res++; 
+            if(Helper.verifyAstuce("astuce.carbonara"))
+                res++; 
+            if(Helper.verifyAstuce("astuce.frites"))
+                res++;
+            if(Helper.verifyAstuce("astuce.pizza"))
+                res++;
+            if(Helper.verifyAstuce("astuce.sushis"))
+                res++;
+            if(Helper.verifyAstuce("astuce.the_anglais"))
+                res++;
+        }
+        if(choix == "comp")
+        {
+            if(Helper.verifyAchat("achats.comp.biere"))
+                res++; 
+            if(Helper.verifyAchat("achats.comp.casserole"))
+                res++; 
+            if(Helper.verifyAchat("achats.comp.louche"))
+                res++;
+            if(Helper.verifyAchat("achats.comp.rappe"))
+                res++;
+        }
+
+        return res; 
+    }
 
     #region button
 
     public void close()
     {
         gameObjectAdmin.SetActive(false); 
+        gameObject.GetComponent<EcranTitreManager>().updateMoney();
     }
 
     public void submitArgentClick()
@@ -135,8 +194,6 @@ public class AdminManager : MonoBehaviour
     public void submitChanges(int valueChanges, string[] tableOfNames)
     {
 
-        Debug.Log(tableOfNames.Length);
-        
         if(valueChanges == 0) //si aucune competence
         {
             foreach(string st in tableOfNames)

@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: f27a06b0dd2efcd468401f83aa069ce4
+guid: 33df2ef48c18bbe49aa6b81d76a10eff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6088342627132289551
-    second: MonedaD_0
+      213: 2856731783151212161
+    second: MonedaD 1_0
   - first:
-      213: -2359506160307568889
-    second: MonedaD_1
+      213: 8538451212028046191
+    second: MonedaD 1_1
   - first:
-      213: 4966363116081101388
-    second: MonedaD_2
+      213: 7531767672949800473
+    second: MonedaD 1_2
   - first:
-      213: -672162727369665448
-    second: MonedaD_3
+      213: -1227530072369901705
+    second: MonedaD 1_3
   - first:
-      213: 2361706786320140148
-    second: MonedaD_4
+      213: -2877062746250673969
+    second: MonedaD 1_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,13 +114,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MonedaD_0
+      name: MonedaD 1_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 2
         y: 0
-        width: 14
-        height: 16
+        width: 35
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f02b619ac532e7450800000000000000
-      internalID: 6088342627132289551
+      spriteID: 186db41db6625a720800000000000000
+      internalID: 2856731783151212161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_1
+      name: MonedaD 1_1
       rect:
         serializedVersion: 2
-        x: 19
+        x: 47
         y: 0
-        width: 10
-        height: 16
+        width: 25
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70f758df5a9514fd0800000000000000
-      internalID: -2359506160307568889
+      spriteID: f6b6fe0832cae7670800000000000000
+      internalID: 8538451212028046191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_2
+      name: MonedaD 1_2
       rect:
         serializedVersion: 2
-        x: 37
+        x: 92
         y: 0
-        width: 6
-        height: 16
+        width: 15
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4abd9fe0f01ce440800000000000000
-      internalID: 4966363116081101388
+      spriteID: 91e71f42bc6368860800000000000000
+      internalID: 7531767672949800473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_3
+      name: MonedaD 1_3
       rect:
         serializedVersion: 2
-        x: 51
+        x: 127
         y: 0
-        width: 10
-        height: 16
+        width: 25
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8549fdb8f8ffba6f0800000000000000
-      internalID: -672162727369665448
+      spriteID: 77f484527efe6fee0800000000000000
+      internalID: -1227530072369901705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_4
+      name: MonedaD 1_4
       rect:
         serializedVersion: 2
-        x: 65
+        x: 162
         y: 0
-        width: 13
-        height: 16
+        width: 33
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,8 +212,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 477cd3e2fc776c020800000000000000
-      internalID: 2361706786320140148
+      spriteID: fc00835fcae9218d0800000000000000
+      internalID: -2877062746250673969
       vertices: []
       indices: 
       edges: []

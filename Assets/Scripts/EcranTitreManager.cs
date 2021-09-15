@@ -18,7 +18,7 @@ public class EcranTitreManager : MonoBehaviour
     private void Start() 
     {
         if(txt_argent != null)
-            txt_argent.text = Helper.getArgent().ToString(); 
+            updateMoney();
 
         //ajout locales
         UI[0].text = Translation.Get("titreJeu"); 
@@ -101,6 +101,11 @@ public class EcranTitreManager : MonoBehaviour
         {
 
         }
+    }
+
+    public void updateMoney()
+    {
+        txt_argent.text = Helper.getArgent().ToString();
     }
 }
 
