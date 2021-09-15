@@ -105,15 +105,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e1ee4a30e01315349a50b1df54504626, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.6, y: 1.1}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &6156270718946231298
@@ -124,7 +124,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2419803887109735935}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 6537df1c83f4f444e88f10d2d74c9b79, type: 2}
   m_CullingMode: 0
@@ -152,8 +152,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 1.1}
-    newSize: {x: 1.6, y: 1.1}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa77ab90cf162b40af124be69ee7b45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionActuelle: 1
+  directionActuelle: 0
   positions:
   - {fileID: 0}
   - {fileID: 0}
@@ -181,7 +181,6 @@ MonoBehaviour:
   prefabProjectile: {fileID: 6294384895507708280, guid: 2d20d1f2ec89eda4ab719cc3c22a4d3b,
     type: 3}
   invincibility: 0
-  takehit: 0
   model: {fileID: 0}
 --- !u!114 &7764657645533003294
 MonoBehaviour:

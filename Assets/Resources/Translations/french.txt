@@ -54,6 +54,8 @@ tutoriel.jeu.pt3 = Il y a aussi le score. À savoir que les points reviennent en
 tutoriel.jeu.pt4 = De là-haut tombent les ingrédients et les déchets aléatoirement. 
 tutoriel.jeu.pt5 = Ici c'est la zone de jeu pour se déplacer et pour tirer. 
 
+tutoriel.troisiemepage.explications = Attention ! Il a un temps limite de <b>3 minutes</b> pour obtenir un maximum de points de compléter un maximum de commande ! <br><br><br>Les ingrédients et déchets ne rapportent pas la meme quantité de points, faites attention à ce que vous éliminez et à ce que vous laissez tomber !
+
 [Achats]
 achats.bouton.skins = Apparences
 achats.bouton.competences = Compétences

@@ -56,9 +56,13 @@ public class SwipeSecondScript : MonoBehaviour
                 // Too short swipe;
                 if (swipe.magnitude < MIN_SWIPE_DISTANCE)
                 {
-                    Projectile.isFired = true;
-                    Helper.createProjectile(GameObject.FindGameObjectWithTag("Player"));
-                    Projectile.isFired = false;
+                    if(PlayerMouvement.tirs < 3)
+                    {
+                        Projectile.isFired = true;
+                        Helper.createProjectile(GameObject.FindGameObjectWithTag("Player"));
+                        Projectile.isFired = false;
+                    }
+                    
                     return;
                 }
                     

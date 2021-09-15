@@ -15,6 +15,13 @@ public class EcranTitreManager : MonoBehaviour
     [SerializeField]
     private List<TextMeshProUGUI> UI; 
 
+    [SerializeField]
+    private GameObject[] pages; 
+    
+    [SerializeField]
+    private Button[] btnsTuto; 
+
+
     private void Start() 
     {
         if(txt_argent != null)
@@ -107,5 +114,45 @@ public class EcranTitreManager : MonoBehaviour
     {
         txt_argent.text = Helper.getArgent().ToString();
     }
+
+     #region buttons_tutoriel
+
+     public void click_suiv_bouton_tuto()
+    {
+        if(pages[0].activeSelf) // aller page 2
+        {
+            pages[0].SetActive(false);
+            pages[1].SetActive(true);
+            btnsTuto[1].interactable = true; 
+        }
+        else if(pages[1].activeSelf) // aller page 3
+        {
+            pages[1].SetActive(false);
+            pages[2].SetActive(true);
+            btnsTuto[0].interactable = false; 
+            TextMeshProUGUI textPage = pages[2].transform.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
+            if(textPage.text == "")
+                textPage.text = Translation.Get("tutoriel.troisiemepage.explications");
+        }
+    }
+
+    public void click_prec_bouton_tuto()
+    {
+        if(pages[1].activeSelf) //revenir page 1
+        {
+            pages[1].SetActive(false);
+            pages[0].SetActive(true);
+            btnsTuto[1].interactable = false; 
+            btnsTuto[0].interactable = true; 
+        }
+        else if(pages[2].activeSelf) //revenir page 2
+        {
+            pages[2].SetActive(false);
+            pages[1].SetActive(true);
+            btnsTuto[0].interactable = true; 
+            btnsTuto[1].interactable = true; 
+        }
+    }
+    #endregion
 }
 

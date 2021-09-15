@@ -25,14 +25,7 @@ public class PlayerMouvement : MonoBehaviour
 
     private void Awake() 
     {
-        // if(PlayerPrefs.HasKey("multiplesTirs"))    
-        // {
-        //     if(PlayerPrefs.GetInt("multiplesTirs") == 1)
-        //     {
-        //         multipleTirs = true; 
-        //     }
-        // }
-        multipleTirs = true;
+        multipleTirs = true; 
     }
     void Start()
     {
@@ -91,6 +84,7 @@ public class PlayerMouvement : MonoBehaviour
             {
                 if(Input.GetKeyDown(KeyCode.RightArrow))
                 {
+                    
                     directionActuelle = Helper.directions.milieu;
                     gameObject.transform.position = positions[1].transform.position;
                 }
@@ -118,7 +112,6 @@ public class PlayerMouvement : MonoBehaviour
             }
         }
          
-        //TODO ajouter les conditions dans le tap
         if(Input.GetKeyDown(KeyCode.Space))
         {
             if(!Projectile.isFired && !multipleTirs)

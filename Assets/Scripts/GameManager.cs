@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
 
         [SerializeField] private List<TextMeshProUGUI> locales; 
 
+        
+        [SerializeField]
+        private Sprite[] skins; 
+
     #endregion
 
    private void Awake() 
@@ -41,6 +45,7 @@ public class GameManager : MonoBehaviour
         //Locales
         locales[0].text = Translation.Get("commande.titre"); 
         locales[1].text = Translation.Get("score.titre");
+       
     }
     // Start is called before the first frame update
     void Start()
@@ -50,7 +55,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SpawnCommande());
         Commande.preparerCommande();
         Inventaire.createInventaire();
-        GetComponent<Timer>().enabled = true; 
+        // GetComponent<Timer>().enabled = true; 
     }
 
     public void activePanel(bool couleur)
@@ -80,8 +85,32 @@ public class GameManager : MonoBehaviour
         }
         GameObject positionGauche = GameObject.Find("GaucheJoueur");
         joueurActuel = Instantiate(joueurprefab, positionGauche.transform.position, Quaternion.identity);
+
         viesJoueur = joueurActuel.GetComponent<PlayerVies>();
-        yield return null; 
+
+        //set skins 
+        int numberAvatar = Helper.getNumberAvatar(); 
+        switch(numberAvatar)
+        {
+            case 1: 
+                joueurActuel.GetComponent<SpriteRenderer>().sprite = skins[0];
+                joueurActuel.GetComponent<Animator>().SetInteger("state", 0);
+            break; 
+            case 2:
+                joueurActuel.GetComponent<SpriteRenderer>().sprite = skins[1];  
+                joueurActuel.GetComponent<Animator>().SetInteger("state", 1);  
+            break; 
+            case 3: 
+                joueurActuel.GetComponent<SpriteRenderer>().sprite = skins[2];
+                joueurActuel.GetComponent<Animator>().SetInteger("state", 2);
+            break; 
+            case 4: 
+                joueurActuel.GetComponent<SpriteRenderer>().sprite = skins[3];
+                joueurActuel.GetComponent<Animator>().SetInteger("state", 3);
+            break; 
+        }
+        joueurActuel.GetComponent<Animator>().enabled = true;
+        yield return null;
     }
 
     private IEnumerator SpawnNourriture()

@@ -3232,6 +3232,11 @@ MonoBehaviour:
   locales:
   - {fileID: 1884976514}
   - {fileID: 358537276}
+  skins:
+  - {fileID: 21300000, guid: e1ee4a30e01315349a50b1df54504626, type: 3}
+  - {fileID: 21300000, guid: 4565945359fe135468974d6ab0aa8ec1, type: 3}
+  - {fileID: 21300000, guid: ada9f3b399f976b4e8ca2b1a1df854fe, type: 3}
+  - {fileID: 21300000, guid: 17b097e322651f44db1615a4b821c9d5, type: 3}
 --- !u!4 &1312311599
 Transform:
   m_ObjectHideFlags: 0

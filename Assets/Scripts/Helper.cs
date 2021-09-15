@@ -416,31 +416,6 @@ public class Helper : MonoBehaviour
             ms_canvas.SetActive(false);
     }
 
-    public void click_suiv_bouton_tuto()
-    {
-        if(tutopage1.activeSelf && tutopage2 != null && btnprectuto != null)
-        {
-            tutopage2.SetActive(true); 
-            tutopage1.SetActive(false); 
-            modetutobtn.interactable = true; 
-            btnprectuto.interactable = true; 
-            btnsuivtuto.interactable = false; 
-        }
-        
-    }
-
-    public void click_prec_bouton_tuto()
-    {
-        if(tutopage2.activeSelf && tutopage1 != null && btnsuivtuto != null)
-        {
-            tutopage2.SetActive(false); 
-            tutopage1.SetActive(true); 
-            modetutobtn.interactable = false; 
-            btnsuivtuto.interactable = true; 
-            btnprectuto.interactable = false; 
-        }
-    }
-
     public void click_partie_tuto()
     {
         GameManager.setTutoriel(true);
