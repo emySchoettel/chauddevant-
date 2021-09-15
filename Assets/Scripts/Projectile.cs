@@ -40,13 +40,14 @@ public class Projectile : MonoBehaviour
         }
         else if(other.transform.CompareTag("Nourriture"))
         {
+            //TODO verify if it isn't in commande +10
+            // GameManager gm = GameObject.Find; 
+            // if(gm.)
             Destroy(other.gameObject);
-            Helper.addPoints(5, true, Helper.item.nourriture);
+            Helper.addPoints(10, true, Helper.item.nourriture);
             move = false; 
         }
         else
             move = false; 
-        
-        
     }
 }

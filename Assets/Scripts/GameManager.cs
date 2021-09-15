@@ -175,6 +175,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ingredientToPlayer()
+    {
+        if(viesJoueur.getVies() > 0)
+        {
+            StartCoroutine(joueurActuel.Vulnerability());
+            viesJoueur.setVies(viesJoueur.getVies() -1);
+        }
+        if(viesJoueur.getVies() == 0)
+        {
+            Sc_Fin.setTitre("Perdu !");
+            endOfGame(); 
+        }
+    }
+
     public void endOfGame()
     {
         //stop everything 
@@ -214,7 +228,8 @@ public class GameManager : MonoBehaviour
             }
             else
             {                
-                Helper.addPoints(10, false);
+                //Helper.addPoints(10, false);
+                ingredientToPlayer();
             }
         }
     }

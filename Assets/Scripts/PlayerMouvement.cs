@@ -152,6 +152,8 @@ public class PlayerMouvement : MonoBehaviour
         anim.SetBool("blink", false);
 
         invincibility = false; 
+        
+        yield return null; 
     }
 
     private Vector3 StartPosition()

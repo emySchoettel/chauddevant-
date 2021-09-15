@@ -56,4 +56,9 @@ public class Commande : MonoBehaviour
             }
         }
     }
+
+    public void isMaching(Helper.nourriture nourritureType)
+    {
+
+    }
 }

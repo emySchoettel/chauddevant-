@@ -36,11 +36,10 @@ public class NourritureItem : MonoBehaviour, Item
     {
         if(other.transform.CompareTag("Player"))
         {
-            gm.verifyInventaire(this);
+            
             if(!gm.getPlayer().GetComponent<PlayerMouvement>().getInvincibility())
             {
-                
-                
+                gm.verifyInventaire(this);
             }
         }
         else if(other.transform.CompareTag("Bound"))
